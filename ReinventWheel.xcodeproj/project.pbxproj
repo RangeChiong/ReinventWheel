@@ -10,6 +10,14 @@
 		02145CEC1CE368A100251E51 /* RWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02145CEB1CE368A100251E51 /* RWBaseViewController.m */; };
 		02145CF01CE3690C00251E51 /* RWSimpleTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 02145CEE1CE3690C00251E51 /* RWSimpleTool.m */; };
 		02555E9D1CE38FCB0068F853 /* RWGlobalFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 02555E9C1CE38FCB0068F853 /* RWGlobalFunction.m */; };
+		02555EA21CE392B10068F853 /* UIView+EasyShow.m in Sources */ = {isa = PBXBuildFile; fileRef = 02555E9F1CE392B10068F853 /* UIView+EasyShow.m */; };
+		02555EA31CE392B10068F853 /* UIView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 02555EA11CE392B10068F853 /* UIView+Utils.m */; };
+		02555EB41CE393AB0068F853 /* NSArray+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 02555EA61CE393AB0068F853 /* NSArray+Block.m */; };
+		02555EB51CE393AB0068F853 /* NSDictionary+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 02555EA91CE393AB0068F853 /* NSDictionary+Block.m */; };
+		02555EB61CE393AB0068F853 /* NSObject+RWAssociatedObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 02555EAC1CE393AB0068F853 /* NSObject+RWAssociatedObjects.m */; };
+		02555EB71CE393AB0068F853 /* NSObject+KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 02555EAE1CE393AB0068F853 /* NSObject+KVO.m */; };
+		02555EB81CE393AB0068F853 /* NSObject+Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 02555EB01CE393AB0068F853 /* NSObject+Notification.m */; };
+		02555EB91CE393AB0068F853 /* NSTimer+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 02555EB31CE393AB0068F853 /* NSTimer+Block.m */; };
 		493FE6EE1CE3171C007DFC5C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE6ED1CE3171C007DFC5C /* AppDelegate.m */; };
 		493FE7041CE3171C007DFC5C /* ReinventWheelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE7031CE3171C007DFC5C /* ReinventWheelTests.m */; };
 		493FE7161CE31768007DFC5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 493FE70F1CE31768007DFC5C /* Assets.xcassets */; };
@@ -38,6 +46,22 @@
 		02555E811CE371FD0068F853 /* RW-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RW-PrefixHeader.pch"; sourceTree = "<group>"; };
 		02555E9B1CE38FCB0068F853 /* RWGlobalFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWGlobalFunction.h; sourceTree = "<group>"; };
 		02555E9C1CE38FCB0068F853 /* RWGlobalFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWGlobalFunction.m; sourceTree = "<group>"; };
+		02555E9E1CE392B10068F853 /* UIView+EasyShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+EasyShow.h"; sourceTree = "<group>"; };
+		02555E9F1CE392B10068F853 /* UIView+EasyShow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+EasyShow.m"; sourceTree = "<group>"; };
+		02555EA01CE392B10068F853 /* UIView+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Utils.h"; sourceTree = "<group>"; };
+		02555EA11CE392B10068F853 /* UIView+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Utils.m"; sourceTree = "<group>"; };
+		02555EA51CE393AB0068F853 /* NSArray+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Block.h"; sourceTree = "<group>"; };
+		02555EA61CE393AB0068F853 /* NSArray+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Block.m"; sourceTree = "<group>"; };
+		02555EA81CE393AB0068F853 /* NSDictionary+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Block.h"; sourceTree = "<group>"; };
+		02555EA91CE393AB0068F853 /* NSDictionary+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Block.m"; sourceTree = "<group>"; };
+		02555EAB1CE393AB0068F853 /* NSObject+RWAssociatedObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RWAssociatedObjects.h"; sourceTree = "<group>"; };
+		02555EAC1CE393AB0068F853 /* NSObject+RWAssociatedObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RWAssociatedObjects.m"; sourceTree = "<group>"; };
+		02555EAD1CE393AB0068F853 /* NSObject+KVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVO.h"; sourceTree = "<group>"; };
+		02555EAE1CE393AB0068F853 /* NSObject+KVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVO.m"; sourceTree = "<group>"; };
+		02555EAF1CE393AB0068F853 /* NSObject+Notification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Notification.h"; sourceTree = "<group>"; };
+		02555EB01CE393AB0068F853 /* NSObject+Notification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Notification.m"; sourceTree = "<group>"; };
+		02555EB21CE393AB0068F853 /* NSTimer+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Block.h"; sourceTree = "<group>"; };
+		02555EB31CE393AB0068F853 /* NSTimer+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Block.m"; sourceTree = "<group>"; };
 		0AFD6A90D0F981608C6A1A48 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		493FE6E61CE3171C007DFC5C /* ReinventWheel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReinventWheel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		493FE6EC1CE3171C007DFC5C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -91,6 +115,46 @@
 				02145CEE1CE3690C00251E51 /* RWSimpleTool.m */,
 			);
 			path = SimpleTool;
+			sourceTree = "<group>";
+		};
+		02555EA41CE393AB0068F853 /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				02555EA51CE393AB0068F853 /* NSArray+Block.h */,
+				02555EA61CE393AB0068F853 /* NSArray+Block.m */,
+			);
+			path = NSArray;
+			sourceTree = "<group>";
+		};
+		02555EA71CE393AB0068F853 /* NSDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				02555EA81CE393AB0068F853 /* NSDictionary+Block.h */,
+				02555EA91CE393AB0068F853 /* NSDictionary+Block.m */,
+			);
+			path = NSDictionary;
+			sourceTree = "<group>";
+		};
+		02555EAA1CE393AB0068F853 /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				02555EAB1CE393AB0068F853 /* NSObject+RWAssociatedObjects.h */,
+				02555EAC1CE393AB0068F853 /* NSObject+RWAssociatedObjects.m */,
+				02555EAD1CE393AB0068F853 /* NSObject+KVO.h */,
+				02555EAE1CE393AB0068F853 /* NSObject+KVO.m */,
+				02555EAF1CE393AB0068F853 /* NSObject+Notification.h */,
+				02555EB01CE393AB0068F853 /* NSObject+Notification.m */,
+			);
+			path = NSObject;
+			sourceTree = "<group>";
+		};
+		02555EB11CE393AB0068F853 /* NSTimer */ = {
+			isa = PBXGroup;
+			children = (
+				02555EB21CE393AB0068F853 /* NSTimer+Block.h */,
+				02555EB31CE393AB0068F853 /* NSTimer+Block.m */,
+			);
+			path = NSTimer;
 			sourceTree = "<group>";
 		};
 		2287E83524C30A773EE6BEBC /* Frameworks */ = {
@@ -190,6 +254,10 @@
 		493FE7281CE318BE007DFC5C /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				02555EA41CE393AB0068F853 /* NSArray */,
+				02555EA71CE393AB0068F853 /* NSDictionary */,
+				02555EAA1CE393AB0068F853 /* NSObject */,
+				02555EB11CE393AB0068F853 /* NSTimer */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -197,6 +265,10 @@
 		493FE7291CE318BE007DFC5C /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				02555E9E1CE392B10068F853 /* UIView+EasyShow.h */,
+				02555E9F1CE392B10068F853 /* UIView+EasyShow.m */,
+				02555EA01CE392B10068F853 /* UIView+Utils.h */,
+				02555EA11CE392B10068F853 /* UIView+Utils.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -470,11 +542,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				02145CEC1CE368A100251E51 /* RWBaseViewController.m in Sources */,
+				02555EB91CE393AB0068F853 /* NSTimer+Block.m in Sources */,
 				493FE7801CE32A52007DFC5C /* CocoaCracker.m in Sources */,
 				02145CF01CE3690C00251E51 /* RWSimpleTool.m in Sources */,
+				02555EB51CE393AB0068F853 /* NSDictionary+Block.m in Sources */,
+				02555EA31CE392B10068F853 /* UIView+Utils.m in Sources */,
+				02555EA21CE392B10068F853 /* UIView+EasyShow.m in Sources */,
+				02555EB81CE393AB0068F853 /* NSObject+Notification.m in Sources */,
+				02555EB71CE393AB0068F853 /* NSObject+KVO.m in Sources */,
 				493FE78A1CE33818007DFC5C /* RWSelectAvatarController.m in Sources */,
 				02555E9D1CE38FCB0068F853 /* RWGlobalFunction.m in Sources */,
+				02555EB61CE393AB0068F853 /* NSObject+RWAssociatedObjects.m in Sources */,
 				493FE71A1CE31768007DFC5C /* main.m in Sources */,
+				02555EB41CE393AB0068F853 /* NSArray+Block.m in Sources */,
 				493FE6EE1CE3171C007DFC5C /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

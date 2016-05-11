@@ -19,8 +19,8 @@
     #import "RWGlobalFunction.h"
 
     // Categories
-//    #import "UIView+EasyShow.h"
-//    #import "UIView+Handle.h"
+    #import "UIView+EasyShow.h"
+    #import "UIView+Utils.h"
 
     // Helper
 //    #import "CXZUserDefaults.h"
