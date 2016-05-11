@@ -170,6 +170,7 @@
 		493FE72A1CE318BE007DFC5C /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				493FE7761CE32864007DFC5C /* 转场 */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -222,6 +223,21 @@
 			children = (
 			);
 			path = WebViewController;
+			sourceTree = "<group>";
+		};
+		493FE7761CE32864007DFC5C /* 转场 */ = {
+			isa = PBXGroup;
+			children = (
+				493FE7771CE32864007DFC5C /* 全屏手势pop+景深效果 */,
+			);
+			path = "转场";
+			sourceTree = "<group>";
+		};
+		493FE7771CE32864007DFC5C /* 全屏手势pop+景深效果 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "全屏手势pop+景深效果";
 			sourceTree = "<group>";
 		};
 		E98AD5A0E381C97329473100 /* Pods */ = {
