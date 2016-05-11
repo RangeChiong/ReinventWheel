@@ -12,6 +12,7 @@
 		493FE7161CE31768007DFC5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 493FE70F1CE31768007DFC5C /* Assets.xcassets */; };
 		493FE7171CE31768007DFC5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 493FE7101CE31768007DFC5C /* LaunchScreen.storyboard */; };
 		493FE71A1CE31768007DFC5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE7151CE31768007DFC5C /* main.m */; };
+		493FE7801CE32A52007DFC5C /* CocoaCracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE77F1CE32A52007DFC5C /* CocoaCracker.m */; };
 		93CFEA37AAD8A7EAAB3CB213 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFD6A90D0F981608C6A1A48 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,8 @@
 		493FE7141CE31768007DFC5C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		493FE7151CE31768007DFC5C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		493FE76D1CE32647007DFC5C /* RWMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWMacros.h; sourceTree = "<group>"; };
+		493FE77E1CE32A52007DFC5C /* CocoaCracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaCracker.h; sourceTree = "<group>"; };
+		493FE77F1CE32A52007DFC5C /* CocoaCracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaCracker.m; sourceTree = "<group>"; };
 		A9E12536F24E4F212A6E35FF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FAB43287A855361B9C55E061 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +126,7 @@
 		493FE7251CE317F0007DFC5C /* MyWheels */ = {
 			isa = PBXGroup;
 			children = (
+				493FE7781CE32A23007DFC5C /* Helper */,
 				493FE72B1CE319C1007DFC5C /* Config */,
 				493FE7261CE318BE007DFC5C /* Base */,
 				493FE7271CE318BE007DFC5C /* Category */,
@@ -238,6 +242,23 @@
 			children = (
 			);
 			path = "全屏手势pop+景深效果";
+			sourceTree = "<group>";
+		};
+		493FE7781CE32A23007DFC5C /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				493FE77D1CE32A52007DFC5C /* CocoaCracker */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		493FE77D1CE32A52007DFC5C /* CocoaCracker */ = {
+			isa = PBXGroup;
+			children = (
+				493FE77E1CE32A52007DFC5C /* CocoaCracker.h */,
+				493FE77F1CE32A52007DFC5C /* CocoaCracker.m */,
+			);
+			path = CocoaCracker;
 			sourceTree = "<group>";
 		};
 		E98AD5A0E381C97329473100 /* Pods */ = {
@@ -401,6 +422,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				493FE7801CE32A52007DFC5C /* CocoaCracker.m in Sources */,
 				493FE71A1CE31768007DFC5C /* main.m in Sources */,
 				493FE6EE1CE3171C007DFC5C /* AppDelegate.m in Sources */,
 			);
