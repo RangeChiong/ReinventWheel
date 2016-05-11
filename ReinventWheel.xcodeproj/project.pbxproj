@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02145CEC1CE368A100251E51 /* RWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02145CEB1CE368A100251E51 /* RWBaseViewController.m */; };
+		02145CF01CE3690C00251E51 /* RWSimpleTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 02145CEE1CE3690C00251E51 /* RWSimpleTool.m */; };
 		493FE6EE1CE3171C007DFC5C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE6ED1CE3171C007DFC5C /* AppDelegate.m */; };
 		493FE7041CE3171C007DFC5C /* ReinventWheelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE7031CE3171C007DFC5C /* ReinventWheelTests.m */; };
 		493FE7161CE31768007DFC5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 493FE70F1CE31768007DFC5C /* Assets.xcassets */; };
@@ -28,6 +30,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02145CEA1CE368A100251E51 /* RWBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWBaseViewController.h; sourceTree = "<group>"; };
+		02145CEB1CE368A100251E51 /* RWBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWBaseViewController.m; sourceTree = "<group>"; };
+		02145CEE1CE3690C00251E51 /* RWSimpleTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWSimpleTool.m; sourceTree = "<group>"; };
+		02145CEF1CE3690C00251E51 /* RWSimpleTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWSimpleTool.h; sourceTree = "<group>"; };
+		02145CF11CE3695500251E51 /* RWGlobalFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWGlobalFunction.h; sourceTree = "<group>"; };
+		02555E811CE371FD0068F853 /* RW-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RW-PrefixHeader.pch"; sourceTree = "<group>"; };
 		0AFD6A90D0F981608C6A1A48 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		493FE6E61CE3171C007DFC5C /* ReinventWheel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReinventWheel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		493FE6EC1CE3171C007DFC5C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -67,6 +75,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02145CE91CE3681200251E51 /* Display */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Display;
+			sourceTree = "<group>";
+		};
+		02145CED1CE3690600251E51 /* SimpleTool */ = {
+			isa = PBXGroup;
+			children = (
+				02145CEF1CE3690C00251E51 /* RWSimpleTool.h */,
+				02145CEE1CE3690C00251E51 /* RWSimpleTool.m */,
+			);
+			path = SimpleTool;
+			sourceTree = "<group>";
+		};
 		2287E83524C30A773EE6BEBC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +124,7 @@
 			children = (
 				493FE6EC1CE3171C007DFC5C /* AppDelegate.h */,
 				493FE6ED1CE3171C007DFC5C /* AppDelegate.m */,
+				02145CE91CE3681200251E51 /* Display */,
 				493FE7251CE317F0007DFC5C /* MyWheels */,
 				493FE70E1CE31768007DFC5C /* SupportingFiles */,
 			);
@@ -187,6 +212,8 @@
 			isa = PBXGroup;
 			children = (
 				493FE76D1CE32647007DFC5C /* RWMacros.h */,
+				02145CF11CE3695500251E51 /* RWGlobalFunction.h */,
+				02555E811CE371FD0068F853 /* RW-PrefixHeader.pch */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -194,6 +221,8 @@
 		493FE76E1CE32738007DFC5C /* BaseViewController */ = {
 			isa = PBXGroup;
 			children = (
+				02145CEA1CE368A100251E51 /* RWBaseViewController.h */,
+				02145CEB1CE368A100251E51 /* RWBaseViewController.m */,
 			);
 			path = BaseViewController;
 			sourceTree = "<group>";
@@ -251,6 +280,7 @@
 		493FE7781CE32A23007DFC5C /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				02145CED1CE3690600251E51 /* SimpleTool */,
 				493FE77D1CE32A52007DFC5C /* CocoaCracker */,
 			);
 			path = Helper;
@@ -330,6 +360,7 @@
 		493FE6DE1CE3171C007DFC5C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = RW;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Centaline;
 				TargetAttributes = {
@@ -435,7 +466,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02145CEC1CE368A100251E51 /* RWBaseViewController.m in Sources */,
 				493FE7801CE32A52007DFC5C /* CocoaCracker.m in Sources */,
+				02145CF01CE3690C00251E51 /* RWSimpleTool.m in Sources */,
 				493FE78A1CE33818007DFC5C /* RWSelectAvatarController.m in Sources */,
 				493FE71A1CE31768007DFC5C /* main.m in Sources */,
 				493FE6EE1CE3171C007DFC5C /* AppDelegate.m in Sources */,
@@ -559,6 +592,8 @@
 			baseConfigurationReference = FAB43287A855361B9C55E061 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "${SRCROOT}/ReinventWheel/MyWheels/Config/RW-PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/ReinventWheel/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.centaline.ReinventWheel;
@@ -571,6 +606,8 @@
 			baseConfigurationReference = A9E12536F24E4F212A6E35FF /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "${SRCROOT}/ReinventWheel/MyWheels/Config/RW-PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/ReinventWheel/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.centaline.ReinventWheel;

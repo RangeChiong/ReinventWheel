@@ -35,13 +35,15 @@ UIImagePickerControllerDelegate> {
 + (instancetype)showWithController:(UIViewController *)controller takePicture:(void(^)(UIImage *editedImage))block {
     RWSelectAvatarController *ctrl = [[RWSelectAvatarController alloc] initWithController:controller];
     [ctrl showForPicture:block];
+
+    
     return ctrl;
 }
 
 + (instancetype)showWithController:(UIViewController *)controller {
     RWSelectAvatarController *ctrl = [[RWSelectAvatarController alloc] initWithController:controller];
     [ctrl show];
-    
+
     return ctrl;
 }
 

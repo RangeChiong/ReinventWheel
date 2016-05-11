@@ -10,7 +10,22 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol RWSelectAvatarControllerDelegate;
+@protocol RWSelectAvatarControllerDelegate <NSObject>
+
+@optional
+
+/*!
+ *  获取原图
+ */
+- (void)takeOriginalSelectedPicture:(UIImage *)image;
+
+
+/*!
+ *  获取编辑后的图
+ */
+- (void)takeEditedSelectedPicture:(UIImage *)image;
+
+@end
 
 
 @interface RWSelectAvatarController : UIViewController
@@ -30,14 +45,6 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
-@protocol RWSelectAvatarControllerDelegate <NSObject>
 
-@optional
-
-- (void)takeOriginalSelectedPicture:(UIImage *)image;
-
-- (void)takeEditedSelectedPicture:(UIImage *)image;
-
-@end
 
 NS_ASSUME_NONNULL_END
