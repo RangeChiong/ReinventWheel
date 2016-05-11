@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		02145CEC1CE368A100251E51 /* RWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02145CEB1CE368A100251E51 /* RWBaseViewController.m */; };
 		02145CF01CE3690C00251E51 /* RWSimpleTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 02145CEE1CE3690C00251E51 /* RWSimpleTool.m */; };
+		02555E9D1CE38FCB0068F853 /* RWGlobalFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 02555E9C1CE38FCB0068F853 /* RWGlobalFunction.m */; };
 		493FE6EE1CE3171C007DFC5C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE6ED1CE3171C007DFC5C /* AppDelegate.m */; };
 		493FE7041CE3171C007DFC5C /* ReinventWheelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE7031CE3171C007DFC5C /* ReinventWheelTests.m */; };
 		493FE7161CE31768007DFC5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 493FE70F1CE31768007DFC5C /* Assets.xcassets */; };
@@ -34,8 +35,9 @@
 		02145CEB1CE368A100251E51 /* RWBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWBaseViewController.m; sourceTree = "<group>"; };
 		02145CEE1CE3690C00251E51 /* RWSimpleTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWSimpleTool.m; sourceTree = "<group>"; };
 		02145CEF1CE3690C00251E51 /* RWSimpleTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWSimpleTool.h; sourceTree = "<group>"; };
-		02145CF11CE3695500251E51 /* RWGlobalFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWGlobalFunction.h; sourceTree = "<group>"; };
 		02555E811CE371FD0068F853 /* RW-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RW-PrefixHeader.pch"; sourceTree = "<group>"; };
+		02555E9B1CE38FCB0068F853 /* RWGlobalFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWGlobalFunction.h; sourceTree = "<group>"; };
+		02555E9C1CE38FCB0068F853 /* RWGlobalFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWGlobalFunction.m; sourceTree = "<group>"; };
 		0AFD6A90D0F981608C6A1A48 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		493FE6E61CE3171C007DFC5C /* ReinventWheel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReinventWheel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		493FE6EC1CE3171C007DFC5C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -212,8 +214,9 @@
 			isa = PBXGroup;
 			children = (
 				493FE76D1CE32647007DFC5C /* RWMacros.h */,
-				02145CF11CE3695500251E51 /* RWGlobalFunction.h */,
 				02555E811CE371FD0068F853 /* RW-PrefixHeader.pch */,
+				02555E9B1CE38FCB0068F853 /* RWGlobalFunction.h */,
+				02555E9C1CE38FCB0068F853 /* RWGlobalFunction.m */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -470,6 +473,7 @@
 				493FE7801CE32A52007DFC5C /* CocoaCracker.m in Sources */,
 				02145CF01CE3690C00251E51 /* RWSimpleTool.m in Sources */,
 				493FE78A1CE33818007DFC5C /* RWSelectAvatarController.m in Sources */,
+				02555E9D1CE38FCB0068F853 /* RWGlobalFunction.m in Sources */,
 				493FE71A1CE31768007DFC5C /* main.m in Sources */,
 				493FE6EE1CE3171C007DFC5C /* AppDelegate.m in Sources */,
 			);
