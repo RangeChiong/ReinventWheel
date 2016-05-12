@@ -29,6 +29,7 @@
 		493FE81C1CE4702B007DFC5C /* UIView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE81A1CE4702B007DFC5C /* UIView+Utils.m */; };
 		493FE81F1CE47033007DFC5C /* UIColor+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE81E1CE47033007DFC5C /* UIColor+Utils.m */; };
 		493FE8231CE47078007DFC5C /* UIButton+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE8221CE47078007DFC5C /* UIButton+Utils.m */; };
+		493FE8261CE472E2007DFC5C /* RWBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE8251CE472E2007DFC5C /* RWBaseNavigationController.m */; };
 		93CFEA37AAD8A7EAAB3CB213 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFD6A90D0F981608C6A1A48 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +91,8 @@
 		493FE81E1CE47033007DFC5C /* UIColor+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Utils.m"; sourceTree = "<group>"; };
 		493FE8211CE47078007DFC5C /* UIButton+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Utils.h"; sourceTree = "<group>"; };
 		493FE8221CE47078007DFC5C /* UIButton+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Utils.m"; sourceTree = "<group>"; };
+		493FE8241CE472E2007DFC5C /* RWBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWBaseNavigationController.h; sourceTree = "<group>"; };
+		493FE8251CE472E2007DFC5C /* RWBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWBaseNavigationController.m; sourceTree = "<group>"; };
 		A9E12536F24E4F212A6E35FF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FAB43287A855361B9C55E061 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -324,6 +327,8 @@
 		493FE7701CE32738007DFC5C /* NavigationController */ = {
 			isa = PBXGroup;
 			children = (
+				493FE8241CE472E2007DFC5C /* RWBaseNavigationController.h */,
+				493FE8251CE472E2007DFC5C /* RWBaseNavigationController.m */,
 			);
 			path = NavigationController;
 			sourceTree = "<group>";
@@ -620,6 +625,7 @@
 				493FE71A1CE31768007DFC5C /* main.m in Sources */,
 				02555EB41CE393AB0068F853 /* NSArray+Block.m in Sources */,
 				493FE6EE1CE3171C007DFC5C /* AppDelegate.m in Sources */,
+				493FE8261CE472E2007DFC5C /* RWBaseNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
