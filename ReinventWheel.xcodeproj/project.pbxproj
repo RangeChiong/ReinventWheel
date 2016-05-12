@@ -26,6 +26,7 @@
 		493FE7801CE32A52007DFC5C /* CocoaCracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE77F1CE32A52007DFC5C /* CocoaCracker.m */; };
 		493FE78A1CE33818007DFC5C /* RWSelectAvatarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE7891CE33818007DFC5C /* RWSelectAvatarController.m */; };
 		493FE7CA1CE41F67007DFC5C /* RWCoreDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE7C91CE41F67007DFC5C /* RWCoreDataTool.m */; };
+		493FE7D11CE44DA9007DFC5C /* RWQRCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE7D01CE44DA9007DFC5C /* RWQRCodeGenerator.m */; };
 		93CFEA37AAD8A7EAAB3CB213 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFD6A90D0F981608C6A1A48 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +82,8 @@
 		493FE7891CE33818007DFC5C /* RWSelectAvatarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWSelectAvatarController.m; sourceTree = "<group>"; };
 		493FE7C81CE41F67007DFC5C /* RWCoreDataTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWCoreDataTool.h; sourceTree = "<group>"; };
 		493FE7C91CE41F67007DFC5C /* RWCoreDataTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWCoreDataTool.m; sourceTree = "<group>"; };
+		493FE7CF1CE44DA9007DFC5C /* RWQRCodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWQRCodeGenerator.h; sourceTree = "<group>"; };
+		493FE7D01CE44DA9007DFC5C /* RWQRCodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWQRCodeGenerator.m; sourceTree = "<group>"; wrapsLines = 1; };
 		A9E12536F24E4F212A6E35FF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FAB43287A855361B9C55E061 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -279,6 +282,7 @@
 		493FE72A1CE318BE007DFC5C /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				493FE7CB1CE44AB4007DFC5C /* 二维码 */,
 				493FE7871CE3380C007DFC5C /* 选取头像 */,
 				493FE7761CE32864007DFC5C /* 转场 */,
 			);
@@ -390,6 +394,15 @@
 				493FE7C91CE41F67007DFC5C /* RWCoreDataTool.m */,
 			);
 			path = CoreDataTool;
+			sourceTree = "<group>";
+		};
+		493FE7CB1CE44AB4007DFC5C /* 二维码 */ = {
+			isa = PBXGroup;
+			children = (
+				493FE7CF1CE44DA9007DFC5C /* RWQRCodeGenerator.h */,
+				493FE7D01CE44DA9007DFC5C /* RWQRCodeGenerator.m */,
+			);
+			path = "二维码";
 			sourceTree = "<group>";
 		};
 		E98AD5A0E381C97329473100 /* Pods */ = {
@@ -556,6 +569,7 @@
 			files = (
 				02145CEC1CE368A100251E51 /* RWBaseViewController.m in Sources */,
 				02555EB91CE393AB0068F853 /* NSTimer+Block.m in Sources */,
+				493FE7D11CE44DA9007DFC5C /* RWQRCodeGenerator.m in Sources */,
 				493FE7CA1CE41F67007DFC5C /* RWCoreDataTool.m in Sources */,
 				493FE7801CE32A52007DFC5C /* CocoaCracker.m in Sources */,
 				02145CF01CE3690C00251E51 /* RWSimpleTool.m in Sources */,
