@@ -1,6 +1,6 @@
 //
 //  NSDictionary+Block.m
-//  CXZKit
+//  RWKit
 //
 //  Created by Ranger on 16/5/5.
 //  Copyright © 2016年 Centaline. All rights reserved.
@@ -10,7 +10,7 @@
 
 @implementation NSDictionary (Block)
 
-- (void)cxz_each:(void (^)(id key, id obj))block {
+- (void)rw_each:(void (^)(id key, id obj))block {
     NSParameterAssert(block != nil);
     
     [self enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
@@ -18,7 +18,7 @@
     }];
 }
 
-- (void)cxz_apply:(void (^)(id key, id obj))block {
+- (void)rw_apply:(void (^)(id key, id obj))block {
     NSParameterAssert(block != nil);
     
     [self enumerateKeysAndObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(id key, id obj, BOOL *stop) {
@@ -26,7 +26,7 @@
     }];
 }
 
-- (id)cxz_match:(BOOL (^)(id key, id obj))block {
+- (id)rw_match:(BOOL (^)(id key, id obj))block {
     NSParameterAssert(block != nil);
     
     return self[[[self keysOfEntriesPassingTest:^(id key, id obj, BOOL *stop) {
@@ -39,7 +39,7 @@
     }] anyObject]];
 }
 
-- (NSDictionary *)cxz_select:(BOOL (^)(id key, id obj))block {
+- (NSDictionary *)rw_select:(BOOL (^)(id key, id obj))block {
     NSParameterAssert(block != nil);
     
     NSArray *keys = [[self keysOfEntriesPassingTest:^(id key, id obj, BOOL *stop) {
@@ -50,12 +50,12 @@
     return [NSDictionary dictionaryWithObjects:objects forKeys:keys];
 }
 
-- (NSDictionary *)cxz_map:(id (^)(id key, id obj))block {
+- (NSDictionary *)rw_map:(id (^)(id key, id obj))block {
     NSParameterAssert(block != nil);
     
     NSMutableDictionary *result = [NSMutableDictionary dictionaryWithCapacity:self.count];
     
-    [self cxz_each:^(id key, id obj) {
+    [self rw_each:^(id key, id obj) {
         id value = block(key, obj) ?: [NSNull null];
         result[key] = value;
     }];

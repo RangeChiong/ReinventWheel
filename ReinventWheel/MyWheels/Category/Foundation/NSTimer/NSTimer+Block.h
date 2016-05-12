@@ -1,6 +1,6 @@
 //
 //  NSTimer+Block.h
-//  CXZKit
+//  RWKit
 //
 //  Created by Ranger on 16/5/5.
 //  Copyright © 2016年 Centaline. All rights reserved.
@@ -12,8 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSTimer (Block)
 
-+ (instancetype)cxz_scheduleTimerWithTimeInterval:(NSTimeInterval)ti repeats:(BOOL)rep usingBlock:(void (^)(NSTimer *timer))block;
-+ (instancetype)cxz_timerWithTimeInterval:(NSTimeInterval)ti repeats:(BOOL)rep usingBlock:(void (^)(NSTimer *t))block;
++ (instancetype)rw_scheduleTimerWithTimeInterval:(NSTimeInterval)ti repeats:(BOOL)rep usingBlock:(void (^)(NSTimer *timer))block;
++ (instancetype)rw_timerWithTimeInterval:(NSTimeInterval)ti repeats:(BOOL)rep usingBlock:(void (^)(NSTimer *t))block;
 
 @end
 

@@ -10,8 +10,6 @@
 		02145CEC1CE368A100251E51 /* RWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02145CEB1CE368A100251E51 /* RWBaseViewController.m */; };
 		02145CF01CE3690C00251E51 /* RWSimpleTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 02145CEE1CE3690C00251E51 /* RWSimpleTool.m */; };
 		02555E9D1CE38FCB0068F853 /* RWGlobalFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 02555E9C1CE38FCB0068F853 /* RWGlobalFunction.m */; };
-		02555EA21CE392B10068F853 /* UIView+EasyShow.m in Sources */ = {isa = PBXBuildFile; fileRef = 02555E9F1CE392B10068F853 /* UIView+EasyShow.m */; };
-		02555EA31CE392B10068F853 /* UIView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 02555EA11CE392B10068F853 /* UIView+Utils.m */; };
 		02555EB41CE393AB0068F853 /* NSArray+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 02555EA61CE393AB0068F853 /* NSArray+Block.m */; };
 		02555EB51CE393AB0068F853 /* NSDictionary+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 02555EA91CE393AB0068F853 /* NSDictionary+Block.m */; };
 		02555EB61CE393AB0068F853 /* NSObject+RWAssociatedObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 02555EAC1CE393AB0068F853 /* NSObject+RWAssociatedObjects.m */; };
@@ -27,6 +25,10 @@
 		493FE78A1CE33818007DFC5C /* RWSelectAvatarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE7891CE33818007DFC5C /* RWSelectAvatarController.m */; };
 		493FE7CA1CE41F67007DFC5C /* RWCoreDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE7C91CE41F67007DFC5C /* RWCoreDataTool.m */; };
 		493FE7D11CE44DA9007DFC5C /* RWQRCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE7D01CE44DA9007DFC5C /* RWQRCodeGenerator.m */; };
+		493FE81B1CE4702B007DFC5C /* UIView+EasyShow.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE8181CE4702B007DFC5C /* UIView+EasyShow.m */; };
+		493FE81C1CE4702B007DFC5C /* UIView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE81A1CE4702B007DFC5C /* UIView+Utils.m */; };
+		493FE81F1CE47033007DFC5C /* UIColor+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE81E1CE47033007DFC5C /* UIColor+Utils.m */; };
+		493FE8231CE47078007DFC5C /* UIButton+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE8221CE47078007DFC5C /* UIButton+Utils.m */; };
 		93CFEA37AAD8A7EAAB3CB213 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFD6A90D0F981608C6A1A48 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -48,10 +50,6 @@
 		02555E811CE371FD0068F853 /* RW-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RW-PrefixHeader.pch"; sourceTree = "<group>"; };
 		02555E9B1CE38FCB0068F853 /* RWGlobalFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWGlobalFunction.h; sourceTree = "<group>"; };
 		02555E9C1CE38FCB0068F853 /* RWGlobalFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWGlobalFunction.m; sourceTree = "<group>"; };
-		02555E9E1CE392B10068F853 /* UIView+EasyShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+EasyShow.h"; sourceTree = "<group>"; };
-		02555E9F1CE392B10068F853 /* UIView+EasyShow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+EasyShow.m"; sourceTree = "<group>"; };
-		02555EA01CE392B10068F853 /* UIView+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Utils.h"; sourceTree = "<group>"; };
-		02555EA11CE392B10068F853 /* UIView+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Utils.m"; sourceTree = "<group>"; };
 		02555EA51CE393AB0068F853 /* NSArray+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Block.h"; sourceTree = "<group>"; };
 		02555EA61CE393AB0068F853 /* NSArray+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Block.m"; sourceTree = "<group>"; };
 		02555EA81CE393AB0068F853 /* NSDictionary+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Block.h"; sourceTree = "<group>"; };
@@ -84,6 +82,14 @@
 		493FE7C91CE41F67007DFC5C /* RWCoreDataTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWCoreDataTool.m; sourceTree = "<group>"; };
 		493FE7CF1CE44DA9007DFC5C /* RWQRCodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWQRCodeGenerator.h; sourceTree = "<group>"; };
 		493FE7D01CE44DA9007DFC5C /* RWQRCodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWQRCodeGenerator.m; sourceTree = "<group>"; wrapsLines = 1; };
+		493FE8171CE4702B007DFC5C /* UIView+EasyShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+EasyShow.h"; sourceTree = "<group>"; };
+		493FE8181CE4702B007DFC5C /* UIView+EasyShow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+EasyShow.m"; sourceTree = "<group>"; };
+		493FE8191CE4702B007DFC5C /* UIView+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Utils.h"; sourceTree = "<group>"; };
+		493FE81A1CE4702B007DFC5C /* UIView+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Utils.m"; sourceTree = "<group>"; };
+		493FE81D1CE47033007DFC5C /* UIColor+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Utils.h"; sourceTree = "<group>"; };
+		493FE81E1CE47033007DFC5C /* UIColor+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Utils.m"; sourceTree = "<group>"; };
+		493FE8211CE47078007DFC5C /* UIButton+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Utils.h"; sourceTree = "<group>"; };
+		493FE8221CE47078007DFC5C /* UIButton+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Utils.m"; sourceTree = "<group>"; };
 		A9E12536F24E4F212A6E35FF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FAB43287A855361B9C55E061 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -271,10 +277,9 @@
 		493FE7291CE318BE007DFC5C /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				02555E9E1CE392B10068F853 /* UIView+EasyShow.h */,
-				02555E9F1CE392B10068F853 /* UIView+EasyShow.m */,
-				02555EA01CE392B10068F853 /* UIView+Utils.h */,
-				02555EA11CE392B10068F853 /* UIView+Utils.m */,
+				493FE8201CE4706C007DFC5C /* UIButton */,
+				493FE8161CE4702B007DFC5C /* UIView */,
+				493FE8151CE4702B007DFC5C /* UIColor */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -403,6 +408,35 @@
 				493FE7D01CE44DA9007DFC5C /* RWQRCodeGenerator.m */,
 			);
 			path = "二维码";
+			sourceTree = "<group>";
+		};
+		493FE8151CE4702B007DFC5C /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				493FE81D1CE47033007DFC5C /* UIColor+Utils.h */,
+				493FE81E1CE47033007DFC5C /* UIColor+Utils.m */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		493FE8161CE4702B007DFC5C /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				493FE8171CE4702B007DFC5C /* UIView+EasyShow.h */,
+				493FE8181CE4702B007DFC5C /* UIView+EasyShow.m */,
+				493FE8191CE4702B007DFC5C /* UIView+Utils.h */,
+				493FE81A1CE4702B007DFC5C /* UIView+Utils.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		493FE8201CE4706C007DFC5C /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				493FE8211CE47078007DFC5C /* UIButton+Utils.h */,
+				493FE8221CE47078007DFC5C /* UIButton+Utils.m */,
+			);
+			path = UIButton;
 			sourceTree = "<group>";
 		};
 		E98AD5A0E381C97329473100 /* Pods */ = {
@@ -570,15 +604,17 @@
 				02145CEC1CE368A100251E51 /* RWBaseViewController.m in Sources */,
 				02555EB91CE393AB0068F853 /* NSTimer+Block.m in Sources */,
 				493FE7D11CE44DA9007DFC5C /* RWQRCodeGenerator.m in Sources */,
+				493FE81B1CE4702B007DFC5C /* UIView+EasyShow.m in Sources */,
+				493FE8231CE47078007DFC5C /* UIButton+Utils.m in Sources */,
 				493FE7CA1CE41F67007DFC5C /* RWCoreDataTool.m in Sources */,
 				493FE7801CE32A52007DFC5C /* CocoaCracker.m in Sources */,
 				02145CF01CE3690C00251E51 /* RWSimpleTool.m in Sources */,
+				493FE81F1CE47033007DFC5C /* UIColor+Utils.m in Sources */,
 				02555EB51CE393AB0068F853 /* NSDictionary+Block.m in Sources */,
-				02555EA31CE392B10068F853 /* UIView+Utils.m in Sources */,
-				02555EA21CE392B10068F853 /* UIView+EasyShow.m in Sources */,
 				02555EB81CE393AB0068F853 /* NSObject+Notification.m in Sources */,
 				02555EB71CE393AB0068F853 /* NSObject+KVO.m in Sources */,
 				493FE78A1CE33818007DFC5C /* RWSelectAvatarController.m in Sources */,
+				493FE81C1CE4702B007DFC5C /* UIView+Utils.m in Sources */,
 				02555E9D1CE38FCB0068F853 /* RWGlobalFunction.m in Sources */,
 				02555EB61CE393AB0068F853 /* NSObject+RWAssociatedObjects.m in Sources */,
 				493FE71A1CE31768007DFC5C /* main.m in Sources */,

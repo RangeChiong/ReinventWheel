@@ -1,6 +1,6 @@
 //
 //  NSArray+Block.m
-//  CXZKit
+//  RWKit
 //
 //  Created by Ranger on 16/5/5.
 //  Copyright © 2016年 Centaline. All rights reserved.
@@ -10,7 +10,7 @@
 
 @implementation NSArray (Block)
 
-- (void)cxz_each:(void (^)(id obj))block {
+- (void)rw_each:(void (^)(id obj))block {
     NSParameterAssert(block != nil);
     
     [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
@@ -18,7 +18,7 @@
     }];
 }
 
-- (void)cxz_apply:(void (^)(id obj))block {
+- (void)rw_apply:(void (^)(id obj))block {
     NSParameterAssert(block != nil);
 
     [self enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
@@ -26,7 +26,7 @@
     }];
 }
 
-- (id)cxz_match:(BOOL (^)(id obj))block {
+- (id)rw_match:(BOOL (^)(id obj))block {
     NSParameterAssert(block != nil);
     
     NSUInteger index = [self indexOfObjectPassingTest:^BOOL(id obj, NSUInteger idx, BOOL *stop) {
@@ -39,13 +39,13 @@
     return self[index];
 }
 
-- (NSArray *)cxz_select:(BOOL (^)(id obj))block {
+- (NSArray *)rw_select:(BOOL (^)(id obj))block {
     NSParameterAssert(block != nil);
     return [self objectsAtIndexes:[self indexesOfObjectsPassingTest:^BOOL(id obj, NSUInteger idx, BOOL *stop) {
         return block(obj);
     }]];
 }
-- (NSArray *)cxz_map:(id (^)(id obj))block {
+- (NSArray *)rw_map:(id (^)(id obj))block {
     NSParameterAssert(block != nil);
     
     NSMutableArray *result = [NSMutableArray arrayWithCapacity:self.count];

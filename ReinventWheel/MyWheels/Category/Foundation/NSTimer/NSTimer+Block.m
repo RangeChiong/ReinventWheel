@@ -1,6 +1,6 @@
 //
 //  NSTimer+Block.m
-//  CXZKit
+//  RWKit
 //
 //  Created by Ranger on 16/5/5.
 //  Copyright © 2016年 Centaline. All rights reserved.
@@ -10,13 +10,13 @@
 
 @implementation NSTimer (Block)
 
-+ (instancetype)cxz_scheduleTimerWithTimeInterval:(NSTimeInterval)ti repeats:(BOOL)rep usingBlock:(void (^)(NSTimer *timer))block {
-    NSTimer *timer = [self cxz_timerWithTimeInterval:ti repeats:rep usingBlock:block];
++ (instancetype)rw_scheduleTimerWithTimeInterval:(NSTimeInterval)ti repeats:(BOOL)rep usingBlock:(void (^)(NSTimer *timer))block {
+    NSTimer *timer = [self rw_timerWithTimeInterval:ti repeats:rep usingBlock:block];
     [NSRunLoop.currentRunLoop addTimer:timer forMode:NSDefaultRunLoopMode];
     return timer;
 }
 
-+ (instancetype)cxz_timerWithTimeInterval:(NSTimeInterval)ti repeats:(BOOL)rep usingBlock:(void (^)(NSTimer *t))block {
++ (instancetype)rw_timerWithTimeInterval:(NSTimeInterval)ti repeats:(BOOL)rep usingBlock:(void (^)(NSTimer *t))block {
     
     NSParameterAssert(block != nil);
     CFAbsoluteTime seconds = fmax(ti, 0.0001);
