@@ -25,6 +25,7 @@
 		493FE71A1CE31768007DFC5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE7151CE31768007DFC5C /* main.m */; };
 		493FE7801CE32A52007DFC5C /* CocoaCracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE77F1CE32A52007DFC5C /* CocoaCracker.m */; };
 		493FE78A1CE33818007DFC5C /* RWSelectAvatarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE7891CE33818007DFC5C /* RWSelectAvatarController.m */; };
+		493FE7CA1CE41F67007DFC5C /* RWCoreDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE7C91CE41F67007DFC5C /* RWCoreDataTool.m */; };
 		93CFEA37AAD8A7EAAB3CB213 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFD6A90D0F981608C6A1A48 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +79,8 @@
 		493FE77F1CE32A52007DFC5C /* CocoaCracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaCracker.m; sourceTree = "<group>"; };
 		493FE7881CE33818007DFC5C /* RWSelectAvatarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWSelectAvatarController.h; sourceTree = "<group>"; };
 		493FE7891CE33818007DFC5C /* RWSelectAvatarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWSelectAvatarController.m; sourceTree = "<group>"; };
+		493FE7C81CE41F67007DFC5C /* RWCoreDataTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWCoreDataTool.h; sourceTree = "<group>"; };
+		493FE7C91CE41F67007DFC5C /* RWCoreDataTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWCoreDataTool.m; sourceTree = "<group>"; };
 		A9E12536F24E4F212A6E35FF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FAB43287A855361B9C55E061 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -355,6 +358,7 @@
 		493FE7781CE32A23007DFC5C /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				493FE7C71CE41F3A007DFC5C /* CoreDataTool */,
 				02145CED1CE3690600251E51 /* SimpleTool */,
 				493FE77D1CE32A52007DFC5C /* CocoaCracker */,
 			);
@@ -377,6 +381,15 @@
 				493FE7891CE33818007DFC5C /* RWSelectAvatarController.m */,
 			);
 			path = "选取头像";
+			sourceTree = "<group>";
+		};
+		493FE7C71CE41F3A007DFC5C /* CoreDataTool */ = {
+			isa = PBXGroup;
+			children = (
+				493FE7C81CE41F67007DFC5C /* RWCoreDataTool.h */,
+				493FE7C91CE41F67007DFC5C /* RWCoreDataTool.m */,
+			);
+			path = CoreDataTool;
 			sourceTree = "<group>";
 		};
 		E98AD5A0E381C97329473100 /* Pods */ = {
@@ -543,6 +556,7 @@
 			files = (
 				02145CEC1CE368A100251E51 /* RWBaseViewController.m in Sources */,
 				02555EB91CE393AB0068F853 /* NSTimer+Block.m in Sources */,
+				493FE7CA1CE41F67007DFC5C /* RWCoreDataTool.m in Sources */,
 				493FE7801CE32A52007DFC5C /* CocoaCracker.m in Sources */,
 				02145CF01CE3690C00251E51 /* RWSimpleTool.m in Sources */,
 				02555EB51CE393AB0068F853 /* NSDictionary+Block.m in Sources */,
