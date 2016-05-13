@@ -23,7 +23,7 @@
                                                        attributes:nil
                                                             error:nil];
         if (!createDirection)
-            NSLog(@"创建文件夹失败");
+            NSLog(@"创建文件夹失败：%@", dirPath);
     }
 }
 

@@ -39,7 +39,7 @@ static NSString *const URLSuffix = @"urlSuffix";
         id resModel = [[cls alloc] initWithDictionary:resultDict error:&err];
         
         if (!resModel) {
-            NSLog(@"错误 : %@", req.description);
+            NSLog(@"请求失败 : %@", req.description);
             if (isShow) {
                 UIWindow *window = [UIApplication sharedApplication].keyWindow;
                 MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:window animated:YES];
@@ -52,7 +52,7 @@ static NSString *const URLSuffix = @"urlSuffix";
     
     // 请求失败的回调block
     void (^FailedRequestCallBack) (NSError *) = ^(NSError *error) {
-        NSLog(@"错误 : %@", req.description);
+        NSLog(@"请求失败 : %@", req.description);
         if (isShow) {
             UIWindow *window = [UIApplication sharedApplication].keyWindow;
             MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:window animated:YES];
@@ -75,11 +75,11 @@ static NSString *const URLSuffix = @"urlSuffix";
                      showHud:isShow];
         }else {
             [ZYRequest request:RequestURL
-                           type:RequestNormalType_Post
-                         params:paramDict
-                        success:SuccessfulRequestCallBack
-                        failure:FailedRequestCallBack
-                        showHud:isShow];
+                          type:RequestNormalType_Post
+                        params:paramDict
+                       success:SuccessfulRequestCallBack
+                       failure:FailedRequestCallBack
+                       showHud:isShow];
         }
         
     }else {
@@ -89,11 +89,11 @@ static NSString *const URLSuffix = @"urlSuffix";
         else if ([req conformsToProtocol:@protocol(Delete)]) reqType = RequestNormalType_Delete;
         
         [ZYRequest request:RequestURL
-                       type:reqType
-                     params:paramDict
-                    success:SuccessfulRequestCallBack
-                    failure:FailedRequestCallBack
-                    showHud:isShow];
+                      type:reqType
+                    params:paramDict
+                   success:SuccessfulRequestCallBack
+                   failure:FailedRequestCallBack
+                   showHud:isShow];
     }
 }
 

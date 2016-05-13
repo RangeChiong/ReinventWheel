@@ -9,6 +9,16 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>FDFullscreenPopGesture.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>JSONModel.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 		<key>MBProgressHUD.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -27,7 +37,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>09FA060F1A0492FB25232F489AC4E573</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2C71DE0FB8A6E5BB6EAF9FB037D799CC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>410B25DF16EA5C5B3E2698F74F9625FB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>507B4EAE015E8524A9DDEE7CDB98AB37</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -38,6 +63,11 @@
 			<true/>
 		</dict>
 		<key>C6CBFCE4337F818A8993E58CA5EE3D69</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E633092DAEA309BD892B1A1E4DB9059F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
