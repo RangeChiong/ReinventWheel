@@ -85,8 +85,8 @@ static NSString *const TimeOutKeyPath = @"timeoutInterval";
 + (void)request:(NSString *)url
            type:(RequestNormalType)type
          params:(NSDictionary *)params
-        success:(SuccessfulRequestBlock)success
-        failure:(FailedRequestBlock)failure
+        success:(void (^)(NSDictionary *dict))success
+        failure:(void (^)(NSError *error))failure
         showHud:(BOOL)isShow {
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];

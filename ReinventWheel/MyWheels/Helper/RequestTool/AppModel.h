@@ -9,7 +9,7 @@
 #import "ZYBaseReq.h"
 #import "AppRequestConstant.h"
 
-@interface SearcHouseReq: ZYBaseReq<Get>
+@interface SearchHouseReq: ZYBaseReq<Get>
 
 @property (nonatomic, copy) NSString *empId;
 @property (nonatomic, copy) NSString *token;
@@ -19,19 +19,19 @@
 
 @end
 
-@protocol SearcHouseModel
+@protocol SearchHouseModel
 @end
 
-@interface SearcHouseModel : JSONModel
+@interface SearchHouseModel : JSONModel
 @property (nonatomic, assign) int uid;
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *type;
 @end
 
 
-@interface SearcHouseRes : ZYBaseRes
+@interface SearchHouseRes : ZYBaseRes
 
-@property (nonatomic, strong) NSArray <SearcHouseModel>*content;
+@property (nonatomic, strong) NSArray <SearchHouseModel>*content;
 
 @end
 

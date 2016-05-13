@@ -8,8 +8,8 @@
 
 #import "ZYBaseReq.h"
 #import "ZYRequest.h"
-#import "CocoaCracker/CocoaCracker.h"
-
+#import "CocoaCracker.h"
+#import <MBProgressHUD.h>
 
 static NSString *const ReqModelSuffix = @"Req";
 static NSString *const ResModelSuffix = @"Res";

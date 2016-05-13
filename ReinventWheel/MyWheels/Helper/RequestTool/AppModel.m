@@ -8,7 +8,7 @@
 
 #import "AppModel.h"
 
-@implementation SearcHouseReq
+@implementation SearchHouseReq
 
 - (NSString *)urlSuffix {
     return SearchEstateName;
@@ -16,7 +16,7 @@
 
 @end
 
-@implementation SearcHouseModel
+@implementation SearchHouseModel
 
 + (JSONKeyMapper*)keyMapper {
     return [[JSONKeyMapper alloc] initWithDictionary:@{
@@ -26,6 +26,6 @@
 
 @end
 
-@implementation SearcHouseRes
+@implementation SearchHouseRes
 
 @end
