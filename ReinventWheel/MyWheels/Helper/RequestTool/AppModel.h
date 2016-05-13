@@ -19,9 +19,19 @@
 
 @end
 
+@protocol SearcHouseModel
+@end
+
+@interface SearcHouseModel : JSONModel
+@property (nonatomic, assign) int uid;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *type;
+@end
+
+
 @interface SearcHouseRes : ZYBaseRes
 
-@property (nonatomic, strong) NSArray *content;
+@property (nonatomic, strong) NSArray <SearcHouseModel>*content;
 
 @end
 

@@ -16,6 +16,16 @@
 
 @end
 
+@implementation SearcHouseModel
+
++ (JSONKeyMapper*)keyMapper {
+    return [[JSONKeyMapper alloc] initWithDictionary:@{
+                                                       @"id": @"uid",
+                                                       }];
+}
+
+@end
+
 @implementation SearcHouseRes
 
 @end
