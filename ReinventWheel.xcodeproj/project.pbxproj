@@ -34,6 +34,15 @@
 		493FE8831CE57027007DFC5C /* AppRequestConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE8821CE57027007DFC5C /* AppRequestConstant.m */; };
 		493FE8891CE570B5007DFC5C /* ZYBaseReq.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE8861CE570B5007DFC5C /* ZYBaseReq.m */; };
 		493FE88A1CE570B5007DFC5C /* ZYRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE8881CE570B5007DFC5C /* ZYRequest.m */; };
+		493FE8901CE5D3EC007DFC5C /* RWScreenShotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE88F1CE5D3EC007DFC5C /* RWScreenShotView.m */; };
+		493FE8931CE5DBB2007DFC5C /* RWTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE8921CE5DBB2007DFC5C /* RWTabBarController.m */; };
+		493FE89A1CE5DD05007DFC5C /* RWShowModuleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE8981CE5DD05007DFC5C /* RWShowModuleController.m */; };
+		493FE89B1CE5DD05007DFC5C /* RWShowModuleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 493FE8991CE5DD05007DFC5C /* RWShowModuleController.xib */; };
+		493FE89F1CE5DD16007DFC5C /* RWShowHelperController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE89D1CE5DD16007DFC5C /* RWShowHelperController.m */; };
+		493FE8A01CE5DD16007DFC5C /* RWShowHelperController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 493FE89E1CE5DD16007DFC5C /* RWShowHelperController.xib */; };
+		493FE8A41CE5DD56007DFC5C /* RWShowCategoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE8A21CE5DD56007DFC5C /* RWShowCategoryController.m */; };
+		493FE8A51CE5DD56007DFC5C /* RWShowCategoryController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 493FE8A31CE5DD56007DFC5C /* RWShowCategoryController.xib */; };
+		493FE8A81CE5DD83007DFC5C /* RWTabBarPageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE8A71CE5DD83007DFC5C /* RWTabBarPageModel.m */; };
 		93CFEA37AAD8A7EAAB3CB213 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFD6A90D0F981608C6A1A48 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -105,6 +114,21 @@
 		493FE8861CE570B5007DFC5C /* ZYBaseReq.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYBaseReq.m; sourceTree = "<group>"; };
 		493FE8871CE570B5007DFC5C /* ZYRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYRequest.h; sourceTree = "<group>"; };
 		493FE8881CE570B5007DFC5C /* ZYRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYRequest.m; sourceTree = "<group>"; };
+		493FE88E1CE5D3EC007DFC5C /* RWScreenShotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWScreenShotView.h; sourceTree = "<group>"; };
+		493FE88F1CE5D3EC007DFC5C /* RWScreenShotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWScreenShotView.m; sourceTree = "<group>"; };
+		493FE8911CE5DBB2007DFC5C /* RWTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTabBarController.h; sourceTree = "<group>"; };
+		493FE8921CE5DBB2007DFC5C /* RWTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTabBarController.m; sourceTree = "<group>"; };
+		493FE8971CE5DD05007DFC5C /* RWShowModuleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWShowModuleController.h; sourceTree = "<group>"; };
+		493FE8981CE5DD05007DFC5C /* RWShowModuleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWShowModuleController.m; sourceTree = "<group>"; };
+		493FE8991CE5DD05007DFC5C /* RWShowModuleController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWShowModuleController.xib; sourceTree = "<group>"; };
+		493FE89C1CE5DD16007DFC5C /* RWShowHelperController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWShowHelperController.h; sourceTree = "<group>"; };
+		493FE89D1CE5DD16007DFC5C /* RWShowHelperController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWShowHelperController.m; sourceTree = "<group>"; };
+		493FE89E1CE5DD16007DFC5C /* RWShowHelperController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWShowHelperController.xib; sourceTree = "<group>"; };
+		493FE8A11CE5DD56007DFC5C /* RWShowCategoryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWShowCategoryController.h; sourceTree = "<group>"; };
+		493FE8A21CE5DD56007DFC5C /* RWShowCategoryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWShowCategoryController.m; sourceTree = "<group>"; };
+		493FE8A31CE5DD56007DFC5C /* RWShowCategoryController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWShowCategoryController.xib; sourceTree = "<group>"; };
+		493FE8A61CE5DD83007DFC5C /* RWTabBarPageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTabBarPageModel.h; sourceTree = "<group>"; };
+		493FE8A71CE5DD83007DFC5C /* RWTabBarPageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTabBarPageModel.m; sourceTree = "<group>"; };
 		A9E12536F24E4F212A6E35FF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FAB43287A855361B9C55E061 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,6 +155,9 @@
 		02145CE91CE3681200251E51 /* Display */ = {
 			isa = PBXGroup;
 			children = (
+				493FE8941CE5DCE1007DFC5C /* ShowCategory */,
+				493FE8951CE5DCE1007DFC5C /* ShowHelper */,
+				493FE8961CE5DCE1007DFC5C /* ShowModule */,
 			);
 			path = Display;
 			sourceTree = "<group>";
@@ -341,6 +368,8 @@
 			children = (
 				493FE8241CE472E2007DFC5C /* RWBaseNavigationController.h */,
 				493FE8251CE472E2007DFC5C /* RWBaseNavigationController.m */,
+				493FE88E1CE5D3EC007DFC5C /* RWScreenShotView.h */,
+				493FE88F1CE5D3EC007DFC5C /* RWScreenShotView.m */,
 			);
 			path = NavigationController;
 			sourceTree = "<group>";
@@ -348,6 +377,10 @@
 		493FE7711CE32738007DFC5C /* TabBarController */ = {
 			isa = PBXGroup;
 			children = (
+				493FE8911CE5DBB2007DFC5C /* RWTabBarController.h */,
+				493FE8921CE5DBB2007DFC5C /* RWTabBarController.m */,
+				493FE8A61CE5DD83007DFC5C /* RWTabBarPageModel.h */,
+				493FE8A71CE5DD83007DFC5C /* RWTabBarPageModel.m */,
 			);
 			path = TabBarController;
 			sourceTree = "<group>";
@@ -480,6 +513,36 @@
 			path = BaseModel;
 			sourceTree = "<group>";
 		};
+		493FE8941CE5DCE1007DFC5C /* ShowCategory */ = {
+			isa = PBXGroup;
+			children = (
+				493FE8A11CE5DD56007DFC5C /* RWShowCategoryController.h */,
+				493FE8A21CE5DD56007DFC5C /* RWShowCategoryController.m */,
+				493FE8A31CE5DD56007DFC5C /* RWShowCategoryController.xib */,
+			);
+			path = ShowCategory;
+			sourceTree = "<group>";
+		};
+		493FE8951CE5DCE1007DFC5C /* ShowHelper */ = {
+			isa = PBXGroup;
+			children = (
+				493FE89C1CE5DD16007DFC5C /* RWShowHelperController.h */,
+				493FE89D1CE5DD16007DFC5C /* RWShowHelperController.m */,
+				493FE89E1CE5DD16007DFC5C /* RWShowHelperController.xib */,
+			);
+			path = ShowHelper;
+			sourceTree = "<group>";
+		};
+		493FE8961CE5DCE1007DFC5C /* ShowModule */ = {
+			isa = PBXGroup;
+			children = (
+				493FE8971CE5DD05007DFC5C /* RWShowModuleController.h */,
+				493FE8981CE5DD05007DFC5C /* RWShowModuleController.m */,
+				493FE8991CE5DD05007DFC5C /* RWShowModuleController.xib */,
+			);
+			path = ShowModule;
+			sourceTree = "<group>";
+		};
 		E98AD5A0E381C97329473100 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -576,7 +639,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				493FE7161CE31768007DFC5C /* Assets.xcassets in Resources */,
+				493FE8A01CE5DD16007DFC5C /* RWShowHelperController.xib in Resources */,
+				493FE8A51CE5DD56007DFC5C /* RWShowCategoryController.xib in Resources */,
 				493FE7171CE31768007DFC5C /* LaunchScreen.storyboard in Resources */,
+				493FE89B1CE5DD05007DFC5C /* RWShowModuleController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,6 +708,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				493FE8A41CE5DD56007DFC5C /* RWShowCategoryController.m in Sources */,
+				493FE8A81CE5DD83007DFC5C /* RWTabBarPageModel.m in Sources */,
 				02145CEC1CE368A100251E51 /* RWBaseViewController.m in Sources */,
 				02555EB91CE393AB0068F853 /* NSTimer+Block.m in Sources */,
 				493FE88A1CE570B5007DFC5C /* ZYRequest.m in Sources */,
@@ -655,12 +723,16 @@
 				02555EB51CE393AB0068F853 /* NSDictionary+Block.m in Sources */,
 				493FE8831CE57027007DFC5C /* AppRequestConstant.m in Sources */,
 				02555EB81CE393AB0068F853 /* NSObject+Notification.m in Sources */,
+				493FE89F1CE5DD16007DFC5C /* RWShowHelperController.m in Sources */,
+				493FE89A1CE5DD05007DFC5C /* RWShowModuleController.m in Sources */,
 				02555EB71CE393AB0068F853 /* NSObject+KVO.m in Sources */,
 				493FE78A1CE33818007DFC5C /* RWSelectAvatarController.m in Sources */,
 				493FE81C1CE4702B007DFC5C /* UIView+Utils.m in Sources */,
 				02555E9D1CE38FCB0068F853 /* RWGlobalFunction.m in Sources */,
 				02555EB61CE393AB0068F853 /* NSObject+RWAssociatedObjects.m in Sources */,
+				493FE8931CE5DBB2007DFC5C /* RWTabBarController.m in Sources */,
 				493FE71A1CE31768007DFC5C /* main.m in Sources */,
+				493FE8901CE5D3EC007DFC5C /* RWScreenShotView.m in Sources */,
 				02555EB41CE393AB0068F853 /* NSArray+Block.m in Sources */,
 				493FE6EE1CE3171C007DFC5C /* AppDelegate.m in Sources */,
 				493FE8261CE472E2007DFC5C /* RWBaseNavigationController.m in Sources */,

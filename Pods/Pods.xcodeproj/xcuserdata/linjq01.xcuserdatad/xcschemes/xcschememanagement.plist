@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>FDFullscreenPopGesture.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>JSONModel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,17 +42,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>2C71DE0FB8A6E5BB6EAF9FB037D799CC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>410B25DF16EA5C5B3E2698F74F9625FB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>63BCCEE948398288A9378897E3440751</key>
+		<key>507B4EAE015E8524A9DDEE7CDB98AB37</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E2E2D9479E1150E4F3C127A797D66450</key>
+		<key>E633092DAEA309BD892B1A1E4DB9059F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

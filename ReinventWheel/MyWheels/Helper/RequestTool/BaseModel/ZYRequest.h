@@ -10,10 +10,10 @@
 #import <AFNetworking.h>
 
 typedef NS_ENUM(NSInteger, RequestNormalType) {
-    RequestNormalType_get = 0,
-    RequestNormalType_post,
-    RequestNormalType_put,
-    RequestNormalType_delete
+    RequestNormalType_Get = 0,
+    RequestNormalType_Post,
+    RequestNormalType_Put,
+    RequestNormalType_Delete
 };
 
 @interface ZYRequest : NSObject

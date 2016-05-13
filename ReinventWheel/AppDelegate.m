@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+static void *RWObserveTabBarViewMove = &RWObserveTabBarViewMove;
+
 @interface AppDelegate ()
 
 @end
@@ -17,13 +19,45 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    // 创建好Navigation 设置是否需要FullScreenStyle 然后赋值
+    
+    _screenshotView = [[RWScreenShotView alloc] initWithFrame:CGRectMake(0, 0, _window.size.width, _window.size.height)];
+    [_window insertSubview:_screenshotView atIndex:0];
+    
+    [_window.rootViewController.view addObserver:self forKeyPath:@"transform" options:NSKeyValueObservingOptionNew context:RWObserveTabBarViewMove];
+    
+    _screenshotView.hidden = YES;
+
+    
     return YES;
 }
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
+    if (context == RWObserveTabBarViewMove) {
+        NSValue *value  = [change objectForKey:NSKeyValueChangeNewKey];
+        CGAffineTransform newTransform = [value CGAffineTransformValue];
+        [_screenshotView showEffectChange:CGPointMake(newTransform.tx, 0) ];
+    }
+}
+
+#pragma mark-   Setter & Getter
+
+- (UIWindow *)window {
+    if (_window) {
+        return _window;
+    }
+    _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    _window.backgroundColor = [UIColor whiteColor];
+    [_window makeKeyAndVisible];
+    
+    return _window;
+}
+
+#pragma mark-  app delegate
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
-    
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {

@@ -75,7 +75,7 @@ static NSString *const URLSuffix = @"urlSuffix";
                      showHud:isShow];
         }else {
             [ZYRequest request:RequestURL
-                           type:RequestNormalType_post
+                           type:RequestNormalType_Post
                          params:paramDict
                         success:SuccessfulRequestCallBack
                         failure:FailedRequestCallBack
@@ -84,9 +84,9 @@ static NSString *const URLSuffix = @"urlSuffix";
         
     }else {
         RequestNormalType reqType;
-        if ([req conformsToProtocol:@protocol(Get)]) reqType = RequestNormalType_get;
-        else if ([req conformsToProtocol:@protocol(Put)]) reqType = RequestNormalType_put;
-        else if ([req conformsToProtocol:@protocol(Delete)]) reqType = RequestNormalType_delete;
+        if ([req conformsToProtocol:@protocol(Get)]) reqType = RequestNormalType_Get;
+        else if ([req conformsToProtocol:@protocol(Put)]) reqType = RequestNormalType_Put;
+        else if ([req conformsToProtocol:@protocol(Delete)]) reqType = RequestNormalType_Delete;
         
         [ZYRequest request:RequestURL
                        type:reqType

@@ -44,6 +44,7 @@ UIImagePickerControllerDelegate> {
     RWSelectAvatarController *ctrl = [[RWSelectAvatarController alloc] initWithController:controller];
     [ctrl show];
 
+    
     return ctrl;
 }
 

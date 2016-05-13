@@ -11,6 +11,10 @@
 #import <UIKit+AFNetworking.h>
 #import "AppRequestConstant.h"
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+
+
 @implementation NSString (utils)
 
 - (NSDictionary *)parseJson
@@ -45,7 +49,7 @@ static NSString *const TimeOutKeyPath = @"timeoutInterval";
     
     // 检测网络连接的单例,网络变化时的回调方法
     [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
-        NSLog(@"%d", status);
+        NSLog(@"%ld", (long)status);
     }];
 }
 
@@ -129,22 +133,22 @@ static NSString *const TimeOutKeyPath = @"timeoutInterval";
     NSString *completeURL = [AppRequestURL stringByAppendingString:url];
     
     switch (type) {
-        case RequestNormalType_get: {
+        case RequestNormalType_Get: {
             [manager GET:completeURL parameters:params success:SuccessfulRequestCallBack failure:FailedRequestCallBack];
         }
             break;
             
-        case RequestNormalType_post: {
+        case RequestNormalType_Post: {
             [manager POST:completeURL parameters:params success:SuccessfulRequestCallBack failure:FailedRequestCallBack];
         }
             break;
             
-        case RequestNormalType_put: {
+        case RequestNormalType_Put: {
             [manager PUT:completeURL parameters:params success:SuccessfulRequestCallBack failure:FailedRequestCallBack];
         }
             break;
             
-        case RequestNormalType_delete: {
+        case RequestNormalType_Delete: {
             [manager DELETE:completeURL parameters:params success:SuccessfulRequestCallBack failure:FailedRequestCallBack];
         }
             break;
@@ -203,3 +207,5 @@ static NSString *const TimeOutKeyPath = @"timeoutInterval";
 }
 
 @end
+
+#pragma clang diagnostic pop

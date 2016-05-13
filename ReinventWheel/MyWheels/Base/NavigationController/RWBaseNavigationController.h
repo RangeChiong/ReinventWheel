@@ -16,6 +16,7 @@ typedef NS_ENUM(NSInteger, NavigationControllerPopStyle) {
 
 @interface RWBaseNavigationController : UINavigationController
 
-@property (nonatomic, assign) NavigationControllerPopStyle popStyle;
+@property (nonatomic, assign) NavigationControllerPopStyle popStyle; //!< 转场的类型
+//@property (nonatomic, assign) CGFloat popDistance;  //!< 打开多少距离才pop  
 
 @end

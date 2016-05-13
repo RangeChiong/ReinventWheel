@@ -14,7 +14,13 @@
 
 @implementation RWBaseViewController
 
-
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        _enablePanGesture = YES;
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
