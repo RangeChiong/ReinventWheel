@@ -30,6 +30,10 @@
 		493FE81F1CE47033007DFC5C /* UIColor+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE81E1CE47033007DFC5C /* UIColor+Utils.m */; };
 		493FE8231CE47078007DFC5C /* UIButton+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE8221CE47078007DFC5C /* UIButton+Utils.m */; };
 		493FE8261CE472E2007DFC5C /* RWBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE8251CE472E2007DFC5C /* RWBaseNavigationController.m */; };
+		493FE8801CE5700A007DFC5C /* AppModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE87F1CE5700A007DFC5C /* AppModel.m */; };
+		493FE8831CE57027007DFC5C /* AppRequestConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE8821CE57027007DFC5C /* AppRequestConstant.m */; };
+		493FE8891CE570B5007DFC5C /* ZYBaseReq.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE8861CE570B5007DFC5C /* ZYBaseReq.m */; };
+		493FE88A1CE570B5007DFC5C /* ZYRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE8881CE570B5007DFC5C /* ZYRequest.m */; };
 		93CFEA37AAD8A7EAAB3CB213 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFD6A90D0F981608C6A1A48 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +97,14 @@
 		493FE8221CE47078007DFC5C /* UIButton+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Utils.m"; sourceTree = "<group>"; };
 		493FE8241CE472E2007DFC5C /* RWBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWBaseNavigationController.h; sourceTree = "<group>"; };
 		493FE8251CE472E2007DFC5C /* RWBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWBaseNavigationController.m; sourceTree = "<group>"; };
+		493FE87E1CE5700A007DFC5C /* AppModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppModel.h; sourceTree = "<group>"; };
+		493FE87F1CE5700A007DFC5C /* AppModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppModel.m; sourceTree = "<group>"; };
+		493FE8811CE57027007DFC5C /* AppRequestConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppRequestConstant.h; sourceTree = "<group>"; };
+		493FE8821CE57027007DFC5C /* AppRequestConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppRequestConstant.m; sourceTree = "<group>"; };
+		493FE8851CE570B5007DFC5C /* ZYBaseReq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYBaseReq.h; sourceTree = "<group>"; };
+		493FE8861CE570B5007DFC5C /* ZYBaseReq.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYBaseReq.m; sourceTree = "<group>"; };
+		493FE8871CE570B5007DFC5C /* ZYRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYRequest.h; sourceTree = "<group>"; };
+		493FE8881CE570B5007DFC5C /* ZYRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYRequest.m; sourceTree = "<group>"; };
 		A9E12536F24E4F212A6E35FF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FAB43287A855361B9C55E061 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -372,6 +384,7 @@
 		493FE7781CE32A23007DFC5C /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				493FE8771CE56FC6007DFC5C /* RequestTool */,
 				493FE7C71CE41F3A007DFC5C /* CoreDataTool */,
 				02145CED1CE3690600251E51 /* SimpleTool */,
 				493FE77D1CE32A52007DFC5C /* CocoaCracker */,
@@ -442,6 +455,29 @@
 				493FE8221CE47078007DFC5C /* UIButton+Utils.m */,
 			);
 			path = UIButton;
+			sourceTree = "<group>";
+		};
+		493FE8771CE56FC6007DFC5C /* RequestTool */ = {
+			isa = PBXGroup;
+			children = (
+				493FE87E1CE5700A007DFC5C /* AppModel.h */,
+				493FE87F1CE5700A007DFC5C /* AppModel.m */,
+				493FE8811CE57027007DFC5C /* AppRequestConstant.h */,
+				493FE8821CE57027007DFC5C /* AppRequestConstant.m */,
+				493FE8841CE570B5007DFC5C /* BaseModel */,
+			);
+			path = RequestTool;
+			sourceTree = "<group>";
+		};
+		493FE8841CE570B5007DFC5C /* BaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				493FE8851CE570B5007DFC5C /* ZYBaseReq.h */,
+				493FE8861CE570B5007DFC5C /* ZYBaseReq.m */,
+				493FE8871CE570B5007DFC5C /* ZYRequest.h */,
+				493FE8881CE570B5007DFC5C /* ZYRequest.m */,
+			);
+			path = BaseModel;
 			sourceTree = "<group>";
 		};
 		E98AD5A0E381C97329473100 /* Pods */ = {
@@ -608,6 +644,7 @@
 			files = (
 				02145CEC1CE368A100251E51 /* RWBaseViewController.m in Sources */,
 				02555EB91CE393AB0068F853 /* NSTimer+Block.m in Sources */,
+				493FE88A1CE570B5007DFC5C /* ZYRequest.m in Sources */,
 				493FE7D11CE44DA9007DFC5C /* RWQRCodeGenerator.m in Sources */,
 				493FE81B1CE4702B007DFC5C /* UIView+EasyShow.m in Sources */,
 				493FE8231CE47078007DFC5C /* UIButton+Utils.m in Sources */,
@@ -616,6 +653,7 @@
 				02145CF01CE3690C00251E51 /* RWSimpleTool.m in Sources */,
 				493FE81F1CE47033007DFC5C /* UIColor+Utils.m in Sources */,
 				02555EB51CE393AB0068F853 /* NSDictionary+Block.m in Sources */,
+				493FE8831CE57027007DFC5C /* AppRequestConstant.m in Sources */,
 				02555EB81CE393AB0068F853 /* NSObject+Notification.m in Sources */,
 				02555EB71CE393AB0068F853 /* NSObject+KVO.m in Sources */,
 				493FE78A1CE33818007DFC5C /* RWSelectAvatarController.m in Sources */,
@@ -626,6 +664,8 @@
 				02555EB41CE393AB0068F853 /* NSArray+Block.m in Sources */,
 				493FE6EE1CE3171C007DFC5C /* AppDelegate.m in Sources */,
 				493FE8261CE472E2007DFC5C /* RWBaseNavigationController.m in Sources */,
+				493FE8891CE570B5007DFC5C /* ZYBaseReq.m in Sources */,
+				493FE8801CE5700A007DFC5C /* AppModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
