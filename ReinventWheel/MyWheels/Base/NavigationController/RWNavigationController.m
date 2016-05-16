@@ -1,28 +1,28 @@
 //
-//  RWBaseNavigationController.m
+//  RWNavigationController.m
 //  ReinventWheel
 //
 //  Created by Ranger on 16/5/12.
 //  Copyright © 2016年 Centaline. All rights reserved.
 //
 
-#import "RWBaseNavigationController.h"
+#import "RWNavigationController.h"
 #import "RWBaseViewController.h"
 #import "AppDelegate.h"
 
 static CGFloat const PopDistance = 80;
 
-@interface RWBaseNavigationController ()<
+@interface RWNavigationController ()<
 UIGestureRecognizerDelegate,
 UINavigationControllerDelegate>
 
 @property (nonatomic, strong) UIPanGestureRecognizer *panGesture;  //!< 侧滑手势
-@property (strong ,nonatomic) NSMutableArray *arrayScreenshot;
+@property (nonatomic ,strong) NSMutableArray *arrayScreenshot;
 
 
 @end
 
-@implementation RWBaseNavigationController
+@implementation RWNavigationController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -36,11 +36,12 @@ UINavigationControllerDelegate>
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self __initSelf];
 }
 
-- (void)__initSelf {
-    switch (_popStyle) {
+- (void)setPopStyle:(NavigationControllerPopStyle)popStyle {
+    _popStyle = popStyle;
+    
+    switch (popStyle) {
         case NavigationControllerPopStyle_None:
             //TODO:
             break;
@@ -51,14 +52,14 @@ UINavigationControllerDelegate>
                 self.interactivePopGestureRecognizer.delegate = weakSelf;
                 self.delegate = weakSelf;
             }
-
+            
             break;
         }
         case NavigationControllerPopStyle_FullScreenPan: {
             //屏蔽系统的手势
             self.interactivePopGestureRecognizer.enabled = NO;
             
-            self.panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePanGesture:)];
+            _panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePanGesture:)];
             _panGesture.delegate = self;
             [self.view addGestureRecognizer:_panGesture];
 
@@ -67,7 +68,6 @@ UINavigationControllerDelegate>
         default:
             break;
     }
-    
 }
 
 #pragma mark-   touch action
@@ -90,8 +90,7 @@ UINavigationControllerDelegate>
         case UIGestureRecognizerStateChanged: {
             CGPoint point_inView = [pan translationInView:self.view];
             
-            if (point_inView.x >= 10)
-            {
+            if (point_inView.x >= 10) {
                 rootVC.view.transform = CGAffineTransformMakeTranslation(point_inView.x - 10, 0);
                 presentedVC.view.transform = CGAffineTransformMakeTranslation(point_inView.x - 10, 0);
             }
@@ -101,8 +100,7 @@ UINavigationControllerDelegate>
             
         case UIGestureRecognizerStateEnded: {
             CGPoint point_inView = [pan translationInView:self.view];
-            if (point_inView.x >= PopDistance)
-            {
+            if (point_inView.x >= PopDistance) {
                 [UIView animateWithDuration:0.3 animations:^{
                     rootVC.view.transform = CGAffineTransformMakeTranslation(Screen_Width, 0);
                     presentedVC.view.transform = CGAffineTransformMakeTranslation(Screen_Width, 0);
@@ -113,8 +111,7 @@ UINavigationControllerDelegate>
                     appdelegate.screenshotView.hidden = YES;
                 }];
             }
-            else
-            {
+            else {
                 [UIView animateWithDuration:0.3 animations:^{
                     rootVC.view.transform = CGAffineTransformIdentity;
                     presentedVC.view.transform = CGAffineTransformIdentity;

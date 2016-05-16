@@ -10,6 +10,7 @@
 #import "RWShowModuleController.h"
 #import "RWShowHelperController.h"
 #import "RWShowCategoryController.h"
+#import "RWNavigationController.h"
 
 @interface RWTabBarPageModel () {
     NSArray *_classes;
@@ -38,8 +39,8 @@
                                                                   image:image
                                                           selectedImage:selectedImage];
             
-            UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:controller];
-            
+            RWNavigationController *nav = [[RWNavigationController alloc] initWithRootViewController:controller];
+            nav.popStyle = NavigationControllerPopStyle_FullScreenPan;
             [controllers addObject:nav];
         }
         

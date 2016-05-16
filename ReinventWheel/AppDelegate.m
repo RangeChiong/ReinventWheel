@@ -10,7 +10,9 @@
 
 static void *RWObserveTabBarViewMove = &RWObserveTabBarViewMove;
 
-@interface AppDelegate ()
+@interface AppDelegate () {
+    NavigationControllerPopStyle _popStyle;
+}
 
 @end
 
@@ -19,17 +21,20 @@ static void *RWObserveTabBarViewMove = &RWObserveTabBarViewMove;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    // 创建好Navigation 设置是否需要FullScreenStyle 然后赋值
-    
-    _screenshotView = [[RWScreenShotView alloc] initWithFrame:CGRectMake(0, 0, _window.size.width, _window.size.height)];
-    [_window insertSubview:_screenshotView atIndex:0];
-    
-    [_window.rootViewController.view addObserver:self forKeyPath:@"transform" options:NSKeyValueObservingOptionNew context:RWObserveTabBarViewMove];
-    
-    _screenshotView.hidden = YES;
-
+    self.window.rootViewController = self.tabBarController;
     
     return YES;
+}
+
+- (void)prepareForPop {
+    if (_popStyle == NavigationControllerPopStyle_FullScreenPan) {
+        _screenshotView = [[RWScreenShotView alloc] initWithFrame:CGRectMake(0, 0, _window.size.width, _window.size.height)];
+        [_window insertSubview:_screenshotView atIndex:0];
+        
+        [_window.rootViewController.view addObserver:self forKeyPath:@"transform" options:NSKeyValueObservingOptionNew context:RWObserveTabBarViewMove];
+        
+        _screenshotView.hidden = YES;
+    }
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
@@ -51,6 +56,21 @@ static void *RWObserveTabBarViewMove = &RWObserveTabBarViewMove;
     [_window makeKeyAndVisible];
     
     return _window;
+}
+
+- (RWTabBarController *)tabBarController {
+    if (_tabBarController) {
+        return _tabBarController;
+    }
+    // 创建好Navigation 设置是否需要FullScreenStyle 然后赋值
+    _tabBarController = [[RWTabBarController alloc] init];
+    if ([_tabBarController.viewControllers[0] isKindOfClass:[RWNavigationController class]]) {
+        RWNavigationController *nav = _tabBarController.viewControllers[0];
+        _popStyle = nav.popStyle;
+        [self prepareForPop];
+    }
+    
+    return _tabBarController;
 }
 
 #pragma mark-  app delegate

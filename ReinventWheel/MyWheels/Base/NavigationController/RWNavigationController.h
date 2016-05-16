@@ -1,5 +1,5 @@
 //
-//  RWBaseNavigationController.h
+//  RWNavigationController.h
 //  ReinventWheel
 //
 //  Created by Ranger on 16/5/12.
@@ -9,12 +9,12 @@
 #import <UIKit/UIKit.h>
 
 typedef NS_ENUM(NSInteger, NavigationControllerPopStyle) {
-    NavigationControllerPopStyle_None = 0,   //!< 默认系统的侧滑 自定义leftButton会失效
-    NavigationControllerPopStyle_ForceEdgePan,    //!< 强制侧滑，自定义leftButton后仍有效
+    NavigationControllerPopStyle_None = 0,      //!< 默认系统的侧滑 自定义leftButton会失效
+    NavigationControllerPopStyle_ForceEdgePan,  //!< 强制侧滑，自定义leftButton后仍有效
     NavigationControllerPopStyle_FullScreenPan, //!< 全屏手势侧滑 附带景深效果
 };
 
-@interface RWBaseNavigationController : UINavigationController
+@interface RWNavigationController : UINavigationController
 
 @property (nonatomic, assign) NavigationControllerPopStyle popStyle; //!< 转场的类型
 //@property (nonatomic, assign) CGFloat popDistance;  //!< 打开多少距离才pop  
