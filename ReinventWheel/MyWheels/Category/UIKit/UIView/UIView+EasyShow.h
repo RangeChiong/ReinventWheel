@@ -27,7 +27,7 @@
 @end
 
 //---------------------------------- XibHelper ----------------------------------
-
+IB_DESIGNABLE
 @interface UIView (XibHelper)
 
 @property (nonatomic, assign) IBInspectable CGFloat cornerRadius;

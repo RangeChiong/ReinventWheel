@@ -46,6 +46,7 @@
 		493FE8B01CE95DCF007DFC5C /* RWShowQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE8AE1CE95DCF007DFC5C /* RWShowQRCodeViewController.m */; };
 		493FE8B11CE95DCF007DFC5C /* RWShowQRCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 493FE8AF1CE95DCF007DFC5C /* RWShowQRCodeViewController.xib */; };
 		493FE8B41CE96AE2007DFC5C /* RWNavigationController+RWFullScreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE8B31CE96AE2007DFC5C /* RWNavigationController+RWFullScreenPopGesture.m */; };
+		49A2EB3A1CEAC2F5006B26AE /* RWUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A2EB391CEAC2F5006B26AE /* RWUserDefaults.m */; };
 		93CFEA37AAD8A7EAAB3CB213 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFD6A90D0F981608C6A1A48 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -137,6 +138,8 @@
 		493FE8AF1CE95DCF007DFC5C /* RWShowQRCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWShowQRCodeViewController.xib; sourceTree = "<group>"; };
 		493FE8B21CE96AE2007DFC5C /* RWNavigationController+RWFullScreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RWNavigationController+RWFullScreenPopGesture.h"; sourceTree = "<group>"; };
 		493FE8B31CE96AE2007DFC5C /* RWNavigationController+RWFullScreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RWNavigationController+RWFullScreenPopGesture.m"; sourceTree = "<group>"; };
+		49A2EB381CEAC2F5006B26AE /* RWUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWUserDefaults.h; sourceTree = "<group>"; };
+		49A2EB391CEAC2F5006B26AE /* RWUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWUserDefaults.m; sourceTree = "<group>"; };
 		A9E12536F24E4F212A6E35FF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FAB43287A855361B9C55E061 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -427,6 +430,7 @@
 		493FE7781CE32A23007DFC5C /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				49A2EB371CEAC2F5006B26AE /* UserDefaultsTool */,
 				493FE8771CE56FC6007DFC5C /* RequestTool */,
 				493FE7C71CE41F3A007DFC5C /* CoreDataTool */,
 				02145CED1CE3690600251E51 /* SimpleTool */,
@@ -562,6 +566,15 @@
 				493FE8AF1CE95DCF007DFC5C /* RWShowQRCodeViewController.xib */,
 			);
 			path = "二维码";
+			sourceTree = "<group>";
+		};
+		49A2EB371CEAC2F5006B26AE /* UserDefaultsTool */ = {
+			isa = PBXGroup;
+			children = (
+				49A2EB381CEAC2F5006B26AE /* RWUserDefaults.h */,
+				49A2EB391CEAC2F5006B26AE /* RWUserDefaults.m */,
+			);
+			path = UserDefaultsTool;
 			sourceTree = "<group>";
 		};
 		E98AD5A0E381C97329473100 /* Pods */ = {
@@ -739,6 +752,7 @@
 				493FE81B1CE4702B007DFC5C /* UIView+EasyShow.m in Sources */,
 				493FE8231CE47078007DFC5C /* UIButton+Utils.m in Sources */,
 				493FE7CA1CE41F67007DFC5C /* RWCoreDataTool.m in Sources */,
+				49A2EB3A1CEAC2F5006B26AE /* RWUserDefaults.m in Sources */,
 				493FE7801CE32A52007DFC5C /* CocoaCracker.m in Sources */,
 				02145CF01CE3690C00251E51 /* RWSimpleTool.m in Sources */,
 				493FE81F1CE47033007DFC5C /* UIColor+Utils.m in Sources */,
