@@ -25,7 +25,7 @@
 @implementation RWNotificationHelper
 
 - (instancetype)initWithName:(NSString *)aName target:(id)target selector:(SEL)aSelector object:(id)anObject {
-    if (self == [super init]) {
+    if (self = [super init]) {
         _notiTarget = target;
         _notiSelector = aSelector;
         _notiName = aName;
@@ -40,7 +40,7 @@
 }
 
 - (instancetype)initWithName:(NSString *)aName object:(id)anObject block:(void(^)(NSNotification *noti))block {
-    if (self == [super init]) {
+    if (self = [super init]) {
         _notiName = aName;
         _postNotiObject = anObject;
         _block  = block;

@@ -26,7 +26,7 @@
 @implementation RWKVOHelper
 
 - (instancetype)initWithObject:(id)anObject keyPath:(NSString *)keyPath target:(id)target selector:(SEL)aSelector {
-    if (self == [super init]) {
+    if (self = [super init]) {
         _sourceObject = anObject;
         _keyPath      = keyPath;
         _target       = target;

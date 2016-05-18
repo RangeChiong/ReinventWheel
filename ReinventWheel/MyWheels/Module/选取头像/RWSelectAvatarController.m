@@ -51,7 +51,7 @@ UIImagePickerControllerDelegate> {
 #pragma mark-  private methods
 
 - (instancetype)initWithController:(UIViewController *)controller {
-    if (self == [super init]) {
+    if (self = [super init]) {
         [self addToController:controller];
     }
     return self;
@@ -64,7 +64,9 @@ UIImagePickerControllerDelegate> {
 - (void)showForPicture:(void(^)(UIImage *selectedImage))block {
     [self show];
     _takePictureBlock = ^(UIImage *selectedImage) {
-        block(selectedImage);
+        if (block) {
+            block(selectedImage);
+        }
     };
 }
 
@@ -120,7 +122,9 @@ UIImagePickerControllerDelegate> {
             [_delegate takeEditedSelectedPicture:editedImage];
         }
     }else {
-        _takePictureBlock(editedImage);
+//        if (_takePictureBlock) {
+            _takePictureBlock(editedImage);
+//        }
     }
     
     [self removeFromController];
