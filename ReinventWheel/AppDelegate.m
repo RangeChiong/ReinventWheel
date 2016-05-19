@@ -11,7 +11,7 @@
 static void *RWObserveTabBarViewMove = &RWObserveTabBarViewMove;
 
 @interface AppDelegate () {
-    NavigationControllerPopStyle _popStyle;
+ 
 }
 
 @end
@@ -21,14 +21,16 @@ static void *RWObserveTabBarViewMove = &RWObserveTabBarViewMove;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    self.window.rootViewController = self.tabBarController;
+    [self.window makeKeyAndVisible];
+    
+    _window.rootViewController = self.tabBarController;
     
     return YES;
 }
 
-- (void)prepareForPop {
-    if (_popStyle == NavigationControllerPopStyle_FullScreenPan) {
-        _screenshotView = [[RWScreenShotView alloc] initWithFrame:CGRectMake(0, 0, _window.size.width, _window.size.height)];
+- (void)prepareForPop:(NavigationControllerPopStyle)popStyle {
+    if (popStyle == NavigationControllerPopStyle_FullScreenPan) {
+        _screenshotView = [[RWScreenShotView alloc] initWithFrame:Screen_Bounds];
         [_window insertSubview:_screenshotView atIndex:0];
         
         [_window.rootViewController.view addObserver:self forKeyPath:@"transform" options:NSKeyValueObservingOptionNew context:RWObserveTabBarViewMove];
@@ -53,7 +55,6 @@ static void *RWObserveTabBarViewMove = &RWObserveTabBarViewMove;
     }
     _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     _window.backgroundColor = [UIColor whiteColor];
-    [_window makeKeyAndVisible];
     
     return _window;
 }
@@ -66,8 +67,7 @@ static void *RWObserveTabBarViewMove = &RWObserveTabBarViewMove;
     _tabBarController = [[RWTabBarController alloc] init];
     if ([_tabBarController.viewControllers[0] isKindOfClass:[RWNavigationController class]]) {
         RWNavigationController *nav = _tabBarController.viewControllers[0];
-        _popStyle = nav.popStyle;
-        [self prepareForPop];
+        [self prepareForPop:nav.popStyle];
     }
     
     return _tabBarController;
