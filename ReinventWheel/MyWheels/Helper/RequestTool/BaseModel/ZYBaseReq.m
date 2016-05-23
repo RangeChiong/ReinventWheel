@@ -39,7 +39,7 @@ static NSString *const URLSuffix = @"urlSuffix";
         id resModel = [[cls alloc] initWithDictionary:resultDict error:&err];
         
         if (!resModel) {
-            NSLog(@"请求失败 : %@", req.description);
+            NSLog(@"请求失败 : %@", err);
             if (isShow) {
                 UIWindow *window = [UIApplication sharedApplication].keyWindow;
                 MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:window animated:YES];
@@ -52,7 +52,7 @@ static NSString *const URLSuffix = @"urlSuffix";
     
     // 请求失败的回调block
     void (^FailedRequestCallBack) (NSError *) = ^(NSError *error) {
-        NSLog(@"请求失败 : %@", req.description);
+        NSLog(@"请求失败 : %@", error);
         if (isShow) {
             UIWindow *window = [UIApplication sharedApplication].keyWindow;
             MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:window animated:YES];
