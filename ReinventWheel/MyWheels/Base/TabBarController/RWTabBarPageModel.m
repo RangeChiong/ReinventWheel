@@ -29,7 +29,7 @@
     if (!_controllers) {
         NSMutableArray *controllers = [NSMutableArray new];
         for (int i = 0; i < self.titles.count; i ++) {
-            UIViewController *controller = [[self.classes[i] alloc] init];
+            RWBaseViewController *controller = [[self.classes[i] alloc] init];
             controller.title = _titles[i];
             
             UIImage *image = [self.unselectedImages[i] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];

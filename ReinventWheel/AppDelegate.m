@@ -1,79 +1,40 @@
 //
 //  AppDelegate.m
-//  ReinventWheel
+//  Test0520
 //
-//  Created by Ranger on 16/5/11.
+//  Created by Ranger on 16/5/20.
 //  Copyright © 2016年 Centaline. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "RWTabBarController.h"
 
-static void *RWObserveTabBarViewMove = &RWObserveTabBarViewMove;
-
-@interface AppDelegate () {
- 
-}
+@interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    [self.window makeKeyAndVisible];
-    
-    _window.rootViewController = self.tabBarController;
-    
+    _tabBarController = [[RWTabBarController alloc] init];
+    self.window.rootViewController = _tabBarController;
+
+    _screenshotView = [RWScreenShotView addToWindow:_window];
+
     return YES;
 }
-
-- (void)prepareForPop:(NavigationControllerPopStyle)popStyle {
-    if (popStyle == NavigationControllerPopStyle_FullScreenPan) {
-        _screenshotView = [[RWScreenShotView alloc] initWithFrame:Screen_Bounds];
-        [_window insertSubview:_screenshotView atIndex:0];
-        
-        [_window.rootViewController.view addObserver:self forKeyPath:@"transform" options:NSKeyValueObservingOptionNew context:RWObserveTabBarViewMove];
-        
-        _screenshotView.hidden = YES;
-    }
-}
-
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
-    if (context == RWObserveTabBarViewMove) {
-        NSValue *value  = [change objectForKey:NSKeyValueChangeNewKey];
-        CGAffineTransform newTransform = [value CGAffineTransformValue];
-        [_screenshotView showEffectChange:CGPointMake(newTransform.tx, 0) ];
-    }
-}
-
-#pragma mark-   Setter & Getter
 
 - (UIWindow *)window {
     if (_window) {
         return _window;
     }
-    _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     _window.backgroundColor = [UIColor whiteColor];
-    
+    [_window makeKeyAndVisible];
+
     return _window;
 }
-
-- (RWTabBarController *)tabBarController {
-    if (_tabBarController) {
-        return _tabBarController;
-    }
-    // 创建好Navigation 设置是否需要FullScreenStyle 然后赋值
-    _tabBarController = [[RWTabBarController alloc] init];
-    if ([_tabBarController.viewControllers[0] isKindOfClass:[RWNavigationController class]]) {
-        RWNavigationController *nav = _tabBarController.viewControllers[0];
-        [self prepareForPop:nav.popStyle];
-    }
-    
-    return _tabBarController;
-}
-
-#pragma mark-  app delegate
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

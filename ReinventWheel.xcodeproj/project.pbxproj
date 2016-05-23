@@ -37,17 +37,17 @@
 		493FE8901CE5D3EC007DFC5C /* RWScreenShotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE88F1CE5D3EC007DFC5C /* RWScreenShotView.m */; };
 		493FE8931CE5DBB2007DFC5C /* RWTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE8921CE5DBB2007DFC5C /* RWTabBarController.m */; };
 		493FE89A1CE5DD05007DFC5C /* RWShowModuleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE8981CE5DD05007DFC5C /* RWShowModuleController.m */; };
-		493FE89B1CE5DD05007DFC5C /* RWShowModuleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 493FE8991CE5DD05007DFC5C /* RWShowModuleController.xib */; };
 		493FE89F1CE5DD16007DFC5C /* RWShowHelperController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE89D1CE5DD16007DFC5C /* RWShowHelperController.m */; };
-		493FE8A01CE5DD16007DFC5C /* RWShowHelperController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 493FE89E1CE5DD16007DFC5C /* RWShowHelperController.xib */; };
 		493FE8A41CE5DD56007DFC5C /* RWShowCategoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE8A21CE5DD56007DFC5C /* RWShowCategoryController.m */; };
-		493FE8A51CE5DD56007DFC5C /* RWShowCategoryController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 493FE8A31CE5DD56007DFC5C /* RWShowCategoryController.xib */; };
 		493FE8A81CE5DD83007DFC5C /* RWTabBarPageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE8A71CE5DD83007DFC5C /* RWTabBarPageModel.m */; };
 		493FE8B01CE95DCF007DFC5C /* RWShowQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE8AE1CE95DCF007DFC5C /* RWShowQRCodeViewController.m */; };
 		493FE8B11CE95DCF007DFC5C /* RWShowQRCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 493FE8AF1CE95DCF007DFC5C /* RWShowQRCodeViewController.xib */; };
 		493FE8B41CE96AE2007DFC5C /* RWNavigationController+RWFullScreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 493FE8B31CE96AE2007DFC5C /* RWNavigationController+RWFullScreenPopGesture.m */; };
 		49A2EB3A1CEAC2F5006B26AE /* RWUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A2EB391CEAC2F5006B26AE /* RWUserDefaults.m */; };
 		49A2EB941CEDC5A7006B26AE /* RWQRCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A2EB931CEDC5A7006B26AE /* RWQRCodeController.m */; };
+		49A2EBAB1CEF09B1006B26AE /* RWShowCategoryController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49A2EBAA1CEF09B1006B26AE /* RWShowCategoryController.xib */; };
+		49A2EBAD1CEF09B6006B26AE /* RWShowHelperController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49A2EBAC1CEF09B6006B26AE /* RWShowHelperController.xib */; };
+		49A2EBAF1CEF09BF006B26AE /* RWShowModuleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49A2EBAE1CEF09BF006B26AE /* RWShowModuleController.xib */; };
 		93CFEA37AAD8A7EAAB3CB213 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFD6A90D0F981608C6A1A48 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -125,13 +125,10 @@
 		493FE8921CE5DBB2007DFC5C /* RWTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTabBarController.m; sourceTree = "<group>"; };
 		493FE8971CE5DD05007DFC5C /* RWShowModuleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWShowModuleController.h; sourceTree = "<group>"; };
 		493FE8981CE5DD05007DFC5C /* RWShowModuleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWShowModuleController.m; sourceTree = "<group>"; };
-		493FE8991CE5DD05007DFC5C /* RWShowModuleController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWShowModuleController.xib; sourceTree = "<group>"; };
 		493FE89C1CE5DD16007DFC5C /* RWShowHelperController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWShowHelperController.h; sourceTree = "<group>"; };
 		493FE89D1CE5DD16007DFC5C /* RWShowHelperController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWShowHelperController.m; sourceTree = "<group>"; };
-		493FE89E1CE5DD16007DFC5C /* RWShowHelperController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWShowHelperController.xib; sourceTree = "<group>"; };
 		493FE8A11CE5DD56007DFC5C /* RWShowCategoryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWShowCategoryController.h; sourceTree = "<group>"; };
 		493FE8A21CE5DD56007DFC5C /* RWShowCategoryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWShowCategoryController.m; sourceTree = "<group>"; };
-		493FE8A31CE5DD56007DFC5C /* RWShowCategoryController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWShowCategoryController.xib; sourceTree = "<group>"; };
 		493FE8A61CE5DD83007DFC5C /* RWTabBarPageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTabBarPageModel.h; sourceTree = "<group>"; };
 		493FE8A71CE5DD83007DFC5C /* RWTabBarPageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTabBarPageModel.m; sourceTree = "<group>"; };
 		493FE8AD1CE95DCF007DFC5C /* RWShowQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWShowQRCodeViewController.h; sourceTree = "<group>"; };
@@ -143,6 +140,9 @@
 		49A2EB391CEAC2F5006B26AE /* RWUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWUserDefaults.m; sourceTree = "<group>"; };
 		49A2EB921CEDC5A7006B26AE /* RWQRCodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWQRCodeController.h; sourceTree = "<group>"; };
 		49A2EB931CEDC5A7006B26AE /* RWQRCodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWQRCodeController.m; sourceTree = "<group>"; };
+		49A2EBAA1CEF09B1006B26AE /* RWShowCategoryController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWShowCategoryController.xib; sourceTree = "<group>"; };
+		49A2EBAC1CEF09B6006B26AE /* RWShowHelperController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWShowHelperController.xib; sourceTree = "<group>"; };
+		49A2EBAE1CEF09BF006B26AE /* RWShowModuleController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWShowModuleController.xib; sourceTree = "<group>"; };
 		A9E12536F24E4F212A6E35FF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FAB43287A855361B9C55E061 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -537,7 +537,7 @@
 			children = (
 				493FE8A11CE5DD56007DFC5C /* RWShowCategoryController.h */,
 				493FE8A21CE5DD56007DFC5C /* RWShowCategoryController.m */,
-				493FE8A31CE5DD56007DFC5C /* RWShowCategoryController.xib */,
+				49A2EBAA1CEF09B1006B26AE /* RWShowCategoryController.xib */,
 			);
 			path = ShowCategory;
 			sourceTree = "<group>";
@@ -547,7 +547,7 @@
 			children = (
 				493FE89C1CE5DD16007DFC5C /* RWShowHelperController.h */,
 				493FE89D1CE5DD16007DFC5C /* RWShowHelperController.m */,
-				493FE89E1CE5DD16007DFC5C /* RWShowHelperController.xib */,
+				49A2EBAC1CEF09B6006B26AE /* RWShowHelperController.xib */,
 			);
 			path = ShowHelper;
 			sourceTree = "<group>";
@@ -557,7 +557,7 @@
 			children = (
 				493FE8971CE5DD05007DFC5C /* RWShowModuleController.h */,
 				493FE8981CE5DD05007DFC5C /* RWShowModuleController.m */,
-				493FE8991CE5DD05007DFC5C /* RWShowModuleController.xib */,
+				49A2EBAE1CEF09BF006B26AE /* RWShowModuleController.xib */,
 				493FE8AC1CE95DA9007DFC5C /* 二维码 */,
 			);
 			path = ShowModule;
@@ -678,11 +678,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				493FE8B11CE95DCF007DFC5C /* RWShowQRCodeViewController.xib in Resources */,
+				49A2EBAB1CEF09B1006B26AE /* RWShowCategoryController.xib in Resources */,
 				493FE7161CE31768007DFC5C /* Assets.xcassets in Resources */,
-				493FE8A01CE5DD16007DFC5C /* RWShowHelperController.xib in Resources */,
-				493FE8A51CE5DD56007DFC5C /* RWShowCategoryController.xib in Resources */,
 				493FE7171CE31768007DFC5C /* LaunchScreen.storyboard in Resources */,
-				493FE89B1CE5DD05007DFC5C /* RWShowModuleController.xib in Resources */,
+				49A2EBAD1CEF09B6006B26AE /* RWShowHelperController.xib in Resources */,
+				49A2EBAF1CEF09BF006B26AE /* RWShowModuleController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,10 +10,10 @@
 
 @interface RWScreenShotView : UIView
 
-@property (nonatomic, strong) UIImageView *imgView;  //!< 截屏的图片存放
 
-- (void)showEffectChange:(CGPoint)pt;
-//- (void)restore;
-//- (void)screenShot;
++ (instancetype)addToWindow:(UIWindow *)window;
+
+- (UIImage *)screenShot;
+- (void)setContentImage:(UIImage *)image;
 
 @end

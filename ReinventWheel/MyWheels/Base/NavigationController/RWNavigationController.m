@@ -14,7 +14,9 @@ static CGFloat const PopDistance = 80;
 
 @interface RWNavigationController ()<
 UIGestureRecognizerDelegate,
-UINavigationControllerDelegate>
+UINavigationControllerDelegate> {
+    
+}
 
 @property (nonatomic, strong) UIPanGestureRecognizer *panGesture;  //!< 侧滑手势
 @property (nonatomic ,strong) NSMutableArray *arrayScreenshot;
@@ -58,10 +60,7 @@ UINavigationControllerDelegate>
         case NavigationControllerPopStyle_FullScreenPan: {
             //屏蔽系统的手势
             self.interactivePopGestureRecognizer.enabled = NO;
-            
-            _panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePanGesture:)];
-            _panGesture.delegate = self;
-            [self.view addGestureRecognizer:_panGesture];
+            [self.view addGestureRecognizer:self.panGesture];
 
             break;
         }
@@ -70,11 +69,20 @@ UINavigationControllerDelegate>
     }
 }
 
+- (UIPanGestureRecognizer *)panGesture {
+    if (_panGesture) {
+        return _panGesture;
+    }
+    
+    _panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePanGesture:)];
+    _panGesture.delegate = self;
+    return _panGesture;
+}
+
 #pragma mark-   touch action
 
 - (void)handlePanGesture:(UIPanGestureRecognizer *)pan {
     AppDelegate *appdelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-    
     UIViewController *rootVC = appdelegate.window.rootViewController;
     UIViewController *presentedVC = rootVC.presentedViewController;
     if (self.viewControllers.count == 1) {
@@ -102,8 +110,8 @@ UINavigationControllerDelegate>
             CGPoint point_inView = [pan translationInView:self.view];
             if (point_inView.x >= PopDistance) {
                 [UIView animateWithDuration:0.3 animations:^{
-                    rootVC.view.transform = CGAffineTransformMakeTranslation(Screen_Width, 0);
-                    presentedVC.view.transform = CGAffineTransformMakeTranslation(Screen_Width, 0);
+                    rootVC.view.transform = CGAffineTransformMakeTranslation(320, 0);
+                    presentedVC.view.transform = CGAffineTransformMakeTranslation(320, 0);
                 } completion:^(BOOL finished) {
                     [self popViewControllerAnimated:NO];
                     rootVC.view.transform = CGAffineTransformIdentity;
@@ -140,11 +148,7 @@ UINavigationControllerDelegate>
                 CGPoint translate = [gestureRecognizer translationInView:self.view];
                 
                 BOOL possible = translate.x != 0 && fabs(translate.y) == 0;
-                if (possible)
-                    return YES;
-                else
-                    return NO;
-                return YES;
+                return possible;
             }
         }
     }
@@ -180,13 +184,7 @@ UINavigationControllerDelegate>
         case NavigationControllerPopStyle_FullScreenPan: {
 
             AppDelegate *appdelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-            UIGraphicsBeginImageContextWithOptions(CGSizeMake(Screen_Width, Screen_Height), YES, 0);
-            [appdelegate.window.layer renderInContext:UIGraphicsGetCurrentContext()];
-            UIImage *viewImage = UIGraphicsGetImageFromCurrentImageContext();
-            UIGraphicsEndImageContext();
-            [self.arrayScreenshot addObject:viewImage];
-            
-            appdelegate.screenshotView.imgView.image = viewImage;
+            [self.arrayScreenshot addObject:[appdelegate.screenshotView screenShot]];
             break;
         }
         default:
@@ -201,12 +199,13 @@ UINavigationControllerDelegate>
 
 - (UIViewController *)popViewControllerAnimated:(BOOL)animated {
     if (_popStyle == NavigationControllerPopStyle_FullScreenPan) {
-        AppDelegate *appdelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
         [_arrayScreenshot removeLastObject];
         UIImage *image = [_arrayScreenshot lastObject];
         
-        if (image)
-            appdelegate.screenshotView.imgView.image = image;
+        if (image) {
+            AppDelegate *appdelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+            [appdelegate.screenshotView setContentImage:image];
+        }
     }
     return [super popViewControllerAnimated:animated];
 }
@@ -236,13 +235,14 @@ UINavigationControllerDelegate>
 
 - (NSArray *)popToRootViewControllerAnimated:(BOOL)animated {
     if (_popStyle == NavigationControllerPopStyle_FullScreenPan) {
-        AppDelegate *appdelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
         if (_arrayScreenshot.count > 2) {
             [_arrayScreenshot removeObjectsInRange:NSMakeRange(1, self.arrayScreenshot.count - 1)];
         }
         UIImage *image = [_arrayScreenshot lastObject];
-        if (image)
-            appdelegate.screenshotView.imgView.image = image;
+        if (image) {
+            AppDelegate *appdelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+            [appdelegate.screenshotView setContentImage:image];
+        }
     }
 
     return [super popToRootViewControllerAnimated:animated];

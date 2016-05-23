@@ -8,6 +8,10 @@
 
 #import "RWTabBarController.h"
 #import "RWTabBarPageModel.h"
+#import "RWShowModuleController.h"
+#import "RWShowHelperController.h"
+#import "RWShowCategoryController.h"
+#import "RWNavigationController.h"
 
 @interface RWTabBarController ()
 
