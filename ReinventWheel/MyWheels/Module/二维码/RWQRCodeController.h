@@ -65,7 +65,7 @@
 - (void)openSystemSound:(BOOL)sounding name:(NSString *)name;
 
 /*!
- *  打开扫描的铃声  自定义的铃声路径
+ *  打开扫描的铃声  自定义的铃声路径（在工程文件下）
  */
 - (void)openCustomSound:(BOOL)sounding name:(NSString *)name;
 

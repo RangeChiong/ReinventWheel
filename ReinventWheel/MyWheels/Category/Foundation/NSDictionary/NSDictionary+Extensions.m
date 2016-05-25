@@ -1,14 +1,14 @@
 //
-//  NSDictionary+Block.m
+//  NSDictionary+Extensions.m
 //  RWKit
 //
 //  Created by Ranger on 16/5/5.
 //  Copyright © 2016年 Centaline. All rights reserved.
 //
 
-#import "NSDictionary+Block.h"
+#import "NSDictionary+Extensions.h"
 
-@implementation NSDictionary (Block)
+@implementation NSDictionary (Extensions)
 
 - (void)rw_each:(void (^)(id key, id obj))block {
     NSParameterAssert(block != nil);
@@ -63,5 +63,13 @@
     return result;
 }
 
+@end
+
+@implementation NSMutableDictionary (Safe)
+
+- (void)rw_setObject:(id)anObject forKey:(id<NSCopying>)aKey {
+    if (!anObject) anObject = @"";
+    [self setObject:anObject forKey:aKey];
+}
 
 @end

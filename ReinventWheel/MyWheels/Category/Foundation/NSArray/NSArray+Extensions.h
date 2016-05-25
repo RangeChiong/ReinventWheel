@@ -1,5 +1,5 @@
 //
-//  NSArray+Block.h
+//  NSArray+Extensions.h
 //  RWKit
 //
 //  Created by Ranger on 16/5/5.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSArray (Block)
+@interface NSArray (Extensions)
 
 /** 快速遍历 enumerateObjects */
 - (void)rw_each:(void (^)(id obj))block;

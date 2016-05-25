@@ -1,14 +1,14 @@
 //
-//  NSArray+Block.m
+//  NSArray+Extensions.m
 //  RWKit
 //
 //  Created by Ranger on 16/5/5.
 //  Copyright © 2016年 Centaline. All rights reserved.
 //
 
-#import "NSArray+Block.h"
+#import "NSArray+Extensions.h"
 
-@implementation NSArray (Block)
+@implementation NSArray (Extensions)
 
 - (void)rw_each:(void (^)(id obj))block {
     NSParameterAssert(block != nil);

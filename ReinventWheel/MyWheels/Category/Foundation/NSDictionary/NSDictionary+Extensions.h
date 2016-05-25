@@ -1,5 +1,5 @@
 //
-//  NSDictionary+Block.h
+//  NSDictionary+Extensions.h
 //  RWKit
 //
 //  Created by Ranger on 16/5/5.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSDictionary (Block)
+@interface NSDictionary (Extensions)
 
 /** 快速遍历 */
 - (void)rw_each:(void (^)(id key, id obj))block;
@@ -26,6 +26,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 /** 遍历字典，将每个对象处理后返回成一个新的字典 */
 - (NSDictionary *)rw_map:(id (^)(id key, id obj))block;
+
+@end
+
+@interface NSMutableDictionary<ObjectType, KeyType> (Safe)
+
+- (void)rw_setObject:(ObjectType)anObject forKey:(KeyType <NSCopying>)aKey;
 
 @end
 

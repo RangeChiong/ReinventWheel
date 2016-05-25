@@ -10,8 +10,8 @@
 		02145CEC1CE368A100251E51 /* RWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02145CEB1CE368A100251E51 /* RWBaseViewController.m */; };
 		02145CF01CE3690C00251E51 /* RWSimpleTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 02145CEE1CE3690C00251E51 /* RWSimpleTool.m */; };
 		02555E9D1CE38FCB0068F853 /* RWGlobalFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 02555E9C1CE38FCB0068F853 /* RWGlobalFunction.m */; };
-		02555EB41CE393AB0068F853 /* NSArray+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 02555EA61CE393AB0068F853 /* NSArray+Block.m */; };
-		02555EB51CE393AB0068F853 /* NSDictionary+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 02555EA91CE393AB0068F853 /* NSDictionary+Block.m */; };
+		02555EB41CE393AB0068F853 /* NSArray+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 02555EA61CE393AB0068F853 /* NSArray+Extensions.m */; };
+		02555EB51CE393AB0068F853 /* NSDictionary+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 02555EA91CE393AB0068F853 /* NSDictionary+Extensions.m */; };
 		02555EB61CE393AB0068F853 /* NSObject+RWAssociatedObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 02555EAC1CE393AB0068F853 /* NSObject+RWAssociatedObjects.m */; };
 		02555EB71CE393AB0068F853 /* NSObject+KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 02555EAE1CE393AB0068F853 /* NSObject+KVO.m */; };
 		02555EB81CE393AB0068F853 /* NSObject+Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 02555EB01CE393AB0068F853 /* NSObject+Notification.m */; };
@@ -48,6 +48,8 @@
 		49A2EBAB1CEF09B1006B26AE /* RWShowCategoryController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49A2EBAA1CEF09B1006B26AE /* RWShowCategoryController.xib */; };
 		49A2EBAD1CEF09B6006B26AE /* RWShowHelperController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49A2EBAC1CEF09B6006B26AE /* RWShowHelperController.xib */; };
 		49A2EBAF1CEF09BF006B26AE /* RWShowModuleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49A2EBAE1CEF09BF006B26AE /* RWShowModuleController.xib */; };
+		49A2EC6B1CF3FD56006B26AE /* LeftSlideController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A2EC681CF3FD56006B26AE /* LeftSlideController.m */; };
+		49A2EC6C1CF3FD56006B26AE /* LeftSortsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A2EC6A1CF3FD56006B26AE /* LeftSortsViewController.m */; };
 		93CFEA37AAD8A7EAAB3CB213 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFD6A90D0F981608C6A1A48 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -69,10 +71,10 @@
 		02555E811CE371FD0068F853 /* RW-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RW-PrefixHeader.pch"; sourceTree = "<group>"; };
 		02555E9B1CE38FCB0068F853 /* RWGlobalFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWGlobalFunction.h; sourceTree = "<group>"; };
 		02555E9C1CE38FCB0068F853 /* RWGlobalFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWGlobalFunction.m; sourceTree = "<group>"; };
-		02555EA51CE393AB0068F853 /* NSArray+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Block.h"; sourceTree = "<group>"; };
-		02555EA61CE393AB0068F853 /* NSArray+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Block.m"; sourceTree = "<group>"; };
-		02555EA81CE393AB0068F853 /* NSDictionary+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Block.h"; sourceTree = "<group>"; };
-		02555EA91CE393AB0068F853 /* NSDictionary+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Block.m"; sourceTree = "<group>"; };
+		02555EA51CE393AB0068F853 /* NSArray+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Extensions.h"; sourceTree = "<group>"; };
+		02555EA61CE393AB0068F853 /* NSArray+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Extensions.m"; sourceTree = "<group>"; };
+		02555EA81CE393AB0068F853 /* NSDictionary+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Extensions.h"; sourceTree = "<group>"; };
+		02555EA91CE393AB0068F853 /* NSDictionary+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Extensions.m"; sourceTree = "<group>"; };
 		02555EAB1CE393AB0068F853 /* NSObject+RWAssociatedObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RWAssociatedObjects.h"; sourceTree = "<group>"; };
 		02555EAC1CE393AB0068F853 /* NSObject+RWAssociatedObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RWAssociatedObjects.m"; sourceTree = "<group>"; };
 		02555EAD1CE393AB0068F853 /* NSObject+KVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVO.h"; sourceTree = "<group>"; };
@@ -143,6 +145,10 @@
 		49A2EBAA1CEF09B1006B26AE /* RWShowCategoryController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWShowCategoryController.xib; sourceTree = "<group>"; };
 		49A2EBAC1CEF09B6006B26AE /* RWShowHelperController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWShowHelperController.xib; sourceTree = "<group>"; };
 		49A2EBAE1CEF09BF006B26AE /* RWShowModuleController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWShowModuleController.xib; sourceTree = "<group>"; };
+		49A2EC671CF3FD56006B26AE /* LeftSlideController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftSlideController.h; sourceTree = "<group>"; };
+		49A2EC681CF3FD56006B26AE /* LeftSlideController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftSlideController.m; sourceTree = "<group>"; };
+		49A2EC691CF3FD56006B26AE /* LeftSortsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftSortsViewController.h; sourceTree = "<group>"; };
+		49A2EC6A1CF3FD56006B26AE /* LeftSortsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftSortsViewController.m; sourceTree = "<group>"; };
 		A9E12536F24E4F212A6E35FF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FAB43287A855361B9C55E061 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -188,8 +194,8 @@
 		02555EA41CE393AB0068F853 /* NSArray */ = {
 			isa = PBXGroup;
 			children = (
-				02555EA51CE393AB0068F853 /* NSArray+Block.h */,
-				02555EA61CE393AB0068F853 /* NSArray+Block.m */,
+				02555EA51CE393AB0068F853 /* NSArray+Extensions.h */,
+				02555EA61CE393AB0068F853 /* NSArray+Extensions.m */,
 			);
 			path = NSArray;
 			sourceTree = "<group>";
@@ -197,8 +203,8 @@
 		02555EA71CE393AB0068F853 /* NSDictionary */ = {
 			isa = PBXGroup;
 			children = (
-				02555EA81CE393AB0068F853 /* NSDictionary+Block.h */,
-				02555EA91CE393AB0068F853 /* NSDictionary+Block.m */,
+				02555EA81CE393AB0068F853 /* NSDictionary+Extensions.h */,
+				02555EA91CE393AB0068F853 /* NSDictionary+Extensions.m */,
 			);
 			path = NSDictionary;
 			sourceTree = "<group>";
@@ -343,9 +349,9 @@
 		493FE72A1CE318BE007DFC5C /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				49A2EC661CF3FD49006B26AE /* 侧滑 */,
 				493FE7CB1CE44AB4007DFC5C /* 二维码 */,
 				493FE7871CE3380C007DFC5C /* 选取头像 */,
-				493FE7761CE32864007DFC5C /* 转场 */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -413,21 +419,6 @@
 			children = (
 			);
 			path = WebViewController;
-			sourceTree = "<group>";
-		};
-		493FE7761CE32864007DFC5C /* 转场 */ = {
-			isa = PBXGroup;
-			children = (
-				493FE7771CE32864007DFC5C /* 全屏手势pop+景深效果 */,
-			);
-			path = "转场";
-			sourceTree = "<group>";
-		};
-		493FE7771CE32864007DFC5C /* 全屏手势pop+景深效果 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "全屏手势pop+景深效果";
 			sourceTree = "<group>";
 		};
 		493FE7781CE32A23007DFC5C /* Helper */ = {
@@ -580,6 +571,17 @@
 				49A2EB391CEAC2F5006B26AE /* RWUserDefaults.m */,
 			);
 			path = UserDefaultsTool;
+			sourceTree = "<group>";
+		};
+		49A2EC661CF3FD49006B26AE /* 侧滑 */ = {
+			isa = PBXGroup;
+			children = (
+				49A2EC671CF3FD56006B26AE /* LeftSlideController.h */,
+				49A2EC681CF3FD56006B26AE /* LeftSlideController.m */,
+				49A2EC691CF3FD56006B26AE /* LeftSortsViewController.h */,
+				49A2EC6A1CF3FD56006B26AE /* LeftSortsViewController.m */,
+			);
+			path = "侧滑";
 			sourceTree = "<group>";
 		};
 		E98AD5A0E381C97329473100 /* Pods */ = {
@@ -749,6 +751,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				493FE8A41CE5DD56007DFC5C /* RWShowCategoryController.m in Sources */,
+				49A2EC6C1CF3FD56006B26AE /* LeftSortsViewController.m in Sources */,
 				493FE8A81CE5DD83007DFC5C /* RWTabBarPageModel.m in Sources */,
 				02145CEC1CE368A100251E51 /* RWBaseViewController.m in Sources */,
 				02555EB91CE393AB0068F853 /* NSTimer+Block.m in Sources */,
@@ -759,10 +762,11 @@
 				493FE8231CE47078007DFC5C /* UIButton+Utils.m in Sources */,
 				493FE7CA1CE41F67007DFC5C /* RWCoreDataTool.m in Sources */,
 				49A2EB3A1CEAC2F5006B26AE /* RWUserDefaults.m in Sources */,
+				49A2EC6B1CF3FD56006B26AE /* LeftSlideController.m in Sources */,
 				493FE7801CE32A52007DFC5C /* CocoaCracker.m in Sources */,
 				02145CF01CE3690C00251E51 /* RWSimpleTool.m in Sources */,
 				493FE81F1CE47033007DFC5C /* UIColor+Utils.m in Sources */,
-				02555EB51CE393AB0068F853 /* NSDictionary+Block.m in Sources */,
+				02555EB51CE393AB0068F853 /* NSDictionary+Extensions.m in Sources */,
 				493FE8831CE57027007DFC5C /* AppRequestConstant.m in Sources */,
 				02555EB81CE393AB0068F853 /* NSObject+Notification.m in Sources */,
 				493FE89F1CE5DD16007DFC5C /* RWShowHelperController.m in Sources */,
@@ -775,7 +779,7 @@
 				493FE8931CE5DBB2007DFC5C /* RWTabBarController.m in Sources */,
 				493FE71A1CE31768007DFC5C /* main.m in Sources */,
 				493FE8901CE5D3EC007DFC5C /* RWScreenShotView.m in Sources */,
-				02555EB41CE393AB0068F853 /* NSArray+Block.m in Sources */,
+				02555EB41CE393AB0068F853 /* NSArray+Extensions.m in Sources */,
 				493FE6EE1CE3171C007DFC5C /* AppDelegate.m in Sources */,
 				493FE8261CE472E2007DFC5C /* RWNavigationController.m in Sources */,
 				493FE8B41CE96AE2007DFC5C /* RWNavigationController+RWFullScreenPopGesture.m in Sources */,
