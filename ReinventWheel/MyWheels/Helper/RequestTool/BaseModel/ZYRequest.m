@@ -55,7 +55,7 @@ static NSString *const TimeOutKeyPath = @"timeoutInterval";
 
 //TODO: 待完善
 #pragma mark - Session 下载
-- (void)startDownloadSession:(NSString *)downloadURL {
++ (void)startDownloadSession:(NSString *)downloadURL {
     NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
     AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:config];
     
@@ -83,6 +83,14 @@ static NSString *const TimeOutKeyPath = @"timeoutInterval";
     
     [task resume];
 }
+
+#pragma mark-  取消网络请求
+
++ (void)cancelAllRequest {
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    [manager.operationQueue cancelAllOperations];
+}
+
 
 #pragma mark-  请求
 

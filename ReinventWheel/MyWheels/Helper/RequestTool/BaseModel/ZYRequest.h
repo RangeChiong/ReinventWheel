@@ -25,7 +25,10 @@ typedef NS_ENUM(NSInteger, RequestNormalType) {
 + (void)startReachabilityStatusChangeMonitoring;
 
 /** 开启一个下载任务 */
-- (void)startDownloadSession:(NSString *)downloadURL;
++ (void)startDownloadSession:(NSString *)downloadURL;
+
+/** 取消网络请求 */
++ (void)cancelAllRequest;
 
 /** 根据 RequestNormalType 请求 */
 + (void)request:(NSString *)url
