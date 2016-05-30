@@ -50,6 +50,8 @@
 		49A2EBAF1CEF09BF006B26AE /* RWShowModuleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49A2EBAE1CEF09BF006B26AE /* RWShowModuleController.xib */; };
 		49A2EC6B1CF3FD56006B26AE /* LeftSlideController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A2EC681CF3FD56006B26AE /* LeftSlideController.m */; };
 		49A2EC6C1CF3FD56006B26AE /* LeftSortsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A2EC6A1CF3FD56006B26AE /* LeftSortsViewController.m */; };
+		49A2EF031CFBE830006B26AE /* RWDeformationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A2EF001CFBE830006B26AE /* RWDeformationButton.m */; };
+		49A2EF041CFBE830006B26AE /* RWSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A2EF021CFBE830006B26AE /* RWSpinner.m */; };
 		93CFEA37AAD8A7EAAB3CB213 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFD6A90D0F981608C6A1A48 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -149,6 +151,10 @@
 		49A2EC681CF3FD56006B26AE /* LeftSlideController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftSlideController.m; sourceTree = "<group>"; };
 		49A2EC691CF3FD56006B26AE /* LeftSortsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftSortsViewController.h; sourceTree = "<group>"; };
 		49A2EC6A1CF3FD56006B26AE /* LeftSortsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftSortsViewController.m; sourceTree = "<group>"; };
+		49A2EEFF1CFBE830006B26AE /* RWDeformationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWDeformationButton.h; sourceTree = "<group>"; };
+		49A2EF001CFBE830006B26AE /* RWDeformationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWDeformationButton.m; sourceTree = "<group>"; };
+		49A2EF011CFBE830006B26AE /* RWSpinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWSpinner.h; sourceTree = "<group>"; };
+		49A2EF021CFBE830006B26AE /* RWSpinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWSpinner.m; sourceTree = "<group>"; };
 		A9E12536F24E4F212A6E35FF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FAB43287A855361B9C55E061 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -349,6 +355,7 @@
 		493FE72A1CE318BE007DFC5C /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				49A2EEFE1CFBE825006B26AE /* SpinnerButton */,
 				49A2EC661CF3FD49006B26AE /* 侧滑 */,
 				493FE7CB1CE44AB4007DFC5C /* 二维码 */,
 				493FE7871CE3380C007DFC5C /* 选取头像 */,
@@ -584,6 +591,17 @@
 			path = "侧滑";
 			sourceTree = "<group>";
 		};
+		49A2EEFE1CFBE825006B26AE /* SpinnerButton */ = {
+			isa = PBXGroup;
+			children = (
+				49A2EEFF1CFBE830006B26AE /* RWDeformationButton.h */,
+				49A2EF001CFBE830006B26AE /* RWDeformationButton.m */,
+				49A2EF011CFBE830006B26AE /* RWSpinner.h */,
+				49A2EF021CFBE830006B26AE /* RWSpinner.m */,
+			);
+			path = SpinnerButton;
+			sourceTree = "<group>";
+		};
 		E98AD5A0E381C97329473100 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -760,6 +778,7 @@
 				49A2EB941CEDC5A7006B26AE /* RWQRCodeController.m in Sources */,
 				493FE81B1CE4702B007DFC5C /* UIView+EasyShow.m in Sources */,
 				493FE8231CE47078007DFC5C /* UIButton+Utils.m in Sources */,
+				49A2EF041CFBE830006B26AE /* RWSpinner.m in Sources */,
 				493FE7CA1CE41F67007DFC5C /* RWCoreDataTool.m in Sources */,
 				49A2EB3A1CEAC2F5006B26AE /* RWUserDefaults.m in Sources */,
 				49A2EC6B1CF3FD56006B26AE /* LeftSlideController.m in Sources */,
@@ -786,6 +805,7 @@
 				493FE8891CE570B5007DFC5C /* ZYBaseReq.m in Sources */,
 				493FE8801CE5700A007DFC5C /* AppModel.m in Sources */,
 				493FE8B01CE95DCF007DFC5C /* RWShowQRCodeViewController.m in Sources */,
+				49A2EF031CFBE830006B26AE /* RWDeformationButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
