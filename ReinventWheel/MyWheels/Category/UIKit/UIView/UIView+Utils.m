@@ -50,8 +50,8 @@ static const void *GestureRecognizerHandler = &GestureRecognizerHandler;
 - (void)rw_tapWithHandler:(void (^)(UITapGestureRecognizer *tap))handler {
     NSAssert(handler, @"handler 不能为nil");
     self.handler = handler;
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handlerTapAction:)];
-    [self addGestureRecognizer:tap];
+    
+    [self rw_tapWithTarget:self action:@selector(handlerTapAction:)];
 }
 
 #pragma mark-  handlerAction
