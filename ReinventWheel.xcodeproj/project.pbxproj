@@ -85,6 +85,7 @@
 		02555EB01CE393AB0068F853 /* NSObject+Notification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Notification.m"; sourceTree = "<group>"; };
 		02555EB21CE393AB0068F853 /* NSTimer+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Block.h"; sourceTree = "<group>"; };
 		02555EB31CE393AB0068F853 /* NSTimer+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Block.m"; sourceTree = "<group>"; };
+		02DD6C931D16F131008627E1 /* RWKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWKit.h; sourceTree = "<group>"; };
 		0AFD6A90D0F981608C6A1A48 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		493FE6E61CE3171C007DFC5C /* ReinventWheel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReinventWheel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		493FE6EC1CE3171C007DFC5C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -367,6 +368,7 @@
 			isa = PBXGroup;
 			children = (
 				493FE76D1CE32647007DFC5C /* RWMacros.h */,
+				02DD6C931D16F131008627E1 /* RWKit.h */,
 				02555E811CE371FD0068F853 /* RW-PrefixHeader.pch */,
 				02555E9B1CE38FCB0068F853 /* RWGlobalFunction.h */,
 				02555E9C1CE38FCB0068F853 /* RWGlobalFunction.m */,
