@@ -11,7 +11,7 @@
 
 @interface RWDeformationButton : UIControl
 
-@property(nonatomic, assign)BOOL isLoading;
+@property(nonatomic, assign) BOOL isLoading;
 @property(nonatomic, strong) RWSpinner *spinnerView;
 @property(nonatomic, strong) UIColor *contentColor;
 @property(nonatomic, strong) UIColor *progressColor;

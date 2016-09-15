@@ -56,7 +56,8 @@
 - (UIView *)bgView {
     if (!_bgView) {
         _bgView = [[UIView alloc] initWithFrame:self.bounds];
-        _bgView.backgroundColor = [UIColor blueColor];
+        _bgView.backgroundColor = [UIColor whiteColor];
+        _bgView.layer.cornerRadius = 5;
         _bgView.userInteractionEnabled = NO;
         _bgView.hidden = YES;
     }
@@ -105,7 +106,7 @@
 }
 
 - (void)loadingAction {
-    if (self.isLoading) {
+    if (_isLoading) {
         [self stopLoading];
     }else{
         [self startLoading];
@@ -113,6 +114,9 @@
 }
 
 - (void)startLoading {
+    if (!_bgView.hidden) {
+        return;
+    }
     _isLoading = YES;
     
     _bgView.hidden = NO;
@@ -140,6 +144,9 @@
 }
 
 - (void)stopLoading {
+    if (_bgView.hidden) {
+        return;
+    }
     [_spinnerView stopAnimating];
     _forDisplayButton.hidden = NO;
     
@@ -147,8 +154,7 @@
      UIViewAnimationOptionCurveLinear animations:^{
          _forDisplayButton.transform = CGAffineTransformMakeScale(1, 1);
          _forDisplayButton.alpha = 1;
-     } completion:^(BOOL finished) {
-     }];
+     } completion:nil];
     
     [UIView animateWithDuration:0.3 delay:0 usingSpringWithDamping:0.6 initialSpringVelocity:0 options:UIViewAnimationOptionCurveLinear animations:^{
         _bgView.layer.bounds = CGRectMake(0, 0, _defaultW * _scale, _defaultH * _scale);
